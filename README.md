@@ -38,47 +38,53 @@
     font-size: 17px !important;
   }
 
-  /* Título en un lavanda pálido, en mayúsculas y sin negrita */
-  .bunker-contenido h3 {
+  /* Título en un lavanda pálido, en mayúsculas, sin negrita y separado del texto */
+  .bunker-titulo {
     color: #d1c7e0 !important; 
     font-family: 'Courier New', Courier, monospace !important;
     font-weight: normal !important;
     text-transform: uppercase;
     text-decoration: none !important;
     border-bottom: none !important;
-    margin-bottom: 40px !important;
+    margin-bottom: 50px !important; /* Espacio extra debajo del título */
     font-size: 18px !important;
+    letter-spacing: 0.08em;
+  }
+
+  /* Forzar el espacio vertical entre párrafos individuales */
+  .bunker-contenido p {
+    margin-bottom: 35px !important;
   }
 </style>
 
 <div class="bunker-literario">
   <div class="bunker-contenido">
 
-### SENTIMIENTOS DE CULPA
+    <div class="bunker-titulo">SENTIMIENTOS DE CULPA</div>
 
-Lavarme los dientes. Dar el paso. Mover el aire. Recordar. Recordar a los demás. Una flecha encorvada que sale de un agujero negro. Y frente al espejo: ¿me estrello o me quedo inmóvil? 
+    <p>Lavarme los dientes. Dar el paso. Mover el aire. Recordar. Recordar a los demás. Una flecha encorvada que sale de un agujero negro. Y frente al espejo: ¿me estrello o me quedo inmóvil?</p>
 
-Me duelen los 52 huesos de los pies. Si es que no me falta ninguno. En el cuello: falta la segunda vértebra. Otro diagnóstico tardío. 
+    <p>Me duelen los 52 huesos de los pies. Si es que no me falta ninguno. En el cuello: falta la segunda vértebra. Otro diagnóstico tardío.</p>
 
-Estoy cambiando la piel y duele.
+    <p>Estoy cambiando la piel y duele.</p>
 
-No quiero abrir las cortinas. Prefiero seguir respirando mis propios desechos. 
+    <p>No quiero abrir las cortinas. Prefiero seguir respirando mis propios desechos.</p>
 
-Podría quitar las sillas y obtener más espacio. Estar sentada me distrae. 
+    <p>Podría quitar las sillas y obtener más espacio. Estar sentada me distrae.</p>
 
-¿Qué más puedo quitar? 
+    <p>¿Qué más puedo quitar?</p>
 
-No es que no me gusten los objetos. Es que me aburren. 
+    <p>No es que no me gusten los objetos. Es que me aburren.</p>
 
-¿Hay culpa en eso? 
+    <p>¿Hay culpa en eso?</p>
 
-En querer perder las cosas.
+    <p>En querer perder las cosas.</p>
 
-Siento una culpable libertad cada vez que algo se rompe.
+    <p>Siento una culpable libertad cada vez que algo se rompe.</p>
 
-Últimamente tiro los platos en vez de lavarlos.
+    <p>Últimamente tiro los platos en vez de lavarlos.</p>
 
-Tampoco me lavo mucho los dientes.
+    <p>Tampoco me lavo mucho los dientes.</p>
 
   </div>
 </div>
