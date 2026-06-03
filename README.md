@@ -1,5 +1,12 @@
-
 <style>
+  /* OCULTAR EL ENCABEZADO AUTOMÁTICO DE GITHUB */
+  header, .site-header, #forkongithub, .position-relative.js-header-wrapper {
+    display: none !important;
+    visibility: hidden !important;
+    height: 0 !important;
+    padding: 0 !important;
+  }
+
   html, body {
     background-color: #0d0d0d !important;
     font-family: 'Courier New', Courier, monospace !important;
@@ -10,18 +17,18 @@
     letter-spacing: 0.05em;
   }
   
-  /* Verde salvia con un toque más de brillo y nitidez */
+  /* Tono gris cemento / papel de archivo atenuado (neutro y clínico) */
   body, p, div {
-    color: #a3b8a3 !important; 
+    color: #cbd0c8 !important; 
     font-family: 'Courier New', Courier, monospace !important;
     font-size: 17px !important;
   }
 
-  /* Título en mayúsculas puras, un poco más claro, pero SIN negrita */
+  /* Título en mayúsculas puras, un poco más nítido, sin negrita */
   h1, h2, h3, h3 a, a {
-    color: #cbdcbd !important; 
+    color: #e2e7e0 !important; 
     font-family: 'Courier New', Courier, monospace !important;
-    font-weight: normal !important; /* Grosor estándar de máquina de escribir */
+    font-weight: normal !important;
     text-transform: uppercase;
     text-decoration: none !important;
     border-bottom: none !important;
