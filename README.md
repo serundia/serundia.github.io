@@ -8,83 +8,55 @@
     height: 100% !important;
   }
 
-  /* Este contenedor creará tu búnker limpio desde el borde superior de la pantalla */
-  .bunker-literario {
+  /* Contenedor que centra el cartel exactamente en mitad de la pantalla */
+  .bunker-entrada {
     position: fixed !important;
     top: 0 !important;
     left: 0 !important;
     width: 100% !important;
     height: 100% !important;
     background-color: #0d0d0d !important;
-    z-index: 999999 !important; /* Se coloca por encima de absolutamente todo */
-    overflow-y: auto !important; /* Permite hacer scroll si el texto es largo */
+    z-index: 999999 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
     box-sizing: border-box !important;
-    padding: 80px 24px !important;
+    padding: 24px !important;
   }
 
-  /* El contenedor del texto centrado */
-  .bunker-contenido {
-    max-width: 650px !important;
-    margin: 0 auto !important;
-    font-family: 'Courier New', Courier, monospace !important;
-    line-height: 2.2 !important;
-    letter-spacing: 0.05em;
-  }
-  
-  /* Tu color morado amatista desgastado */
-  .bunker-contenido, .bunker-contenido p, .bunker-contenido div {
-    color: #b3a7c4 !important; 
-    font-family: 'Courier New', Courier, monospace !important;
-    font-size: 17px !important;
-  }
-
-  /* Título en un lavanda pálido, en mayúsculas, sin negrita y separado del texto */
-  .bunker-titulo {
-    color: #d1c7e0 !important; 
+  /* Tu nombre en un rojo frío y luminoso (carmín/neón) */
+  .cartel-luminoso {
+    color: #ff3366 !important; 
     font-family: 'Courier New', Courier, monospace !important;
     font-weight: normal !important;
     text-transform: uppercase;
-    text-decoration: none !important;
-    border-bottom: none !important;
-    margin-bottom: 50px !important; /* Espacio extra debajo del título */
-    font-size: 18px !important;
-    letter-spacing: 0.08em;
+    font-size: 26px !important; /* Un punto más de tamaño para el neón */
+    letter-spacing: 0.25em; /* Letras expandidas de cartel */
+    margin-bottom: 35px !important;
+    text-shadow: 0 0 10px rgba(255, 51, 102, 0.3) !important; /* Ligero destello de tubo de neón */
   }
 
-  /* Forzar el espacio vertical entre párrafos individuales */
-  .bunker-contenido p {
-    margin-bottom: 35px !important;
+  /* El picaporte sutil en la gama de los rojos fríos apagados */
+  .picaporte a, .picaporte a:visited {
+    color: #a63a50 !important;
+    font-family: 'Courier New', Courier, monospace !important;
+    font-size: 14px !important;
+    text-decoration: none !important;
+    letter-spacing: 0.1em;
+    opacity: 0.6;
+    transition: opacity 0.3s, color 0.3s;
+  }
+  
+  .picaporte a:hover {
+    opacity: 1 !important;
+    color: #ff3366 !important; /* Se enciende al pasar el cursor */
   }
 </style>
 
-<div class="bunker-literario">
-  <div class="bunker-contenido">
-
-    <div class="bunker-titulo">SENTIMIENTOS DE CULPA</div>
-
-    <p>Lavarme los dientes. Dar el paso. Mover el aire. Recordar. Recordar a los demás. Una flecha encorvada que sale de un agujero negro. Y frente al espejo: ¿me estrello o me quedo inmóvil?</p>
-
-    <p>Me duelen los 52 huesos de los pies. Si es que no me falta ninguno. En el cuello: falta la segunda vértebra. Otro diagnóstico tardío.</p>
-
-    <p>Estoy cambiando la piel y duele.</p>
-
-    <p>No quiero abrir las cortinas. Prefiero seguir respirando mis propios desechos.</p>
-
-    <p>Podría quitar las sillas y obtener más espacio. Estar sentada me distrae.</p>
-
-    <p>¿Qué más puedo quitar?</p>
-
-    <p>No es que no me gusten los objetos. Es que me aburren.</p>
-
-    <p>¿Hay culpa en eso?</p>
-
-    <p>En querer perder las cosas.</p>
-
-    <p>Siento una culpable libertad cada vez que algo se rompe.</p>
-
-    <p>Últimamente tiro los platos en vez de lavarlos.</p>
-
-    <p>Tampoco me lavo mucho los dientes.</p>
-
+<div class="bunker-entrada">
+  <div class="cartel-luminoso">SERUNDIA</div>
+  <div class="picaporte">
+    <a href="sentimientos-de-culpa.html">[ entrar ]</a>
   </div>
 </div>
