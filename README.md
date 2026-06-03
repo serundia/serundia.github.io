@@ -1,3 +1,4 @@
+theme: jekyll-theme-cayman
 # serundia.github.io
 artefactos literarios
 
