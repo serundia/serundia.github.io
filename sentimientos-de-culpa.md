@@ -1,6 +1,5 @@
-HTML
 <style>
-  /* EL ESCUDO NEGRO TAMBIÉN PROTEGE ESTA HABITACIÓN */
+  /* EL ESCUDO NEGRO TOTAL */
   html, body {
     background-color: #0d0d0d !important;
     margin: 0 !important;
@@ -19,38 +18,51 @@ HTML
     z-index: 999999 !important;
     overflow-y: auto !important;
     box-sizing: border-box !important;
-    padding: 80px 24px !important;
+    padding: 100px 24px !important; /* Más espacio arriba para que caiga centrado */
   }
 
+  /* TEXTO MÁS ESTRECHO: Genera mucho más vacío negro alrededor */
   .bunker-contenido {
-    max-width: 650px !important;
+    max-width: 500px !important; 
     margin: 0 auto !important;
     font-family: 'Courier New', Courier, monospace !important;
     line-height: 2.2 !important;
     letter-spacing: 0.05em;
   }
   
-  /* Tus párrafos en el morado analógico que elegiste */
-  .bunker-contenido, .bunker-contenido p, .bunker-contenido div {
+  /* Color morado amatista para el texto */
+  .bunker-contenido p, .bunker-contenido div {
     color: #b3a7c4 !important; 
     font-family: 'Courier New', Courier, monospace !important;
     font-size: 17px !important;
   }
 
-  /* El botón discreto para volver a la entrada principal */
+  /* TÍTULO EN NARANJA VIBRANTE COPIANDO EL ESTILO DE MÁQUINA DE ESCRIBIR */
+  .titulo-habitacion {
+    color: #ff6633 !important; /* Naranja incandescente */
+    font-family: 'Courier New', Courier, monospace !important;
+    font-weight: normal !important;
+    text-transform: uppercase;
+    font-size: 18px !important;
+    letter-spacing: 0.12em;
+    margin-bottom: 60px !important; /* Distancia generosa antes de empezar la prosa */
+  }
+
+  /* El botón discreto para regresar al cartel luminoso */
   .bunker-volver {
-    margin-top: 60px !important;
-    border-top: 1px solid #222 !important;
+    margin-top: 80px !important;
+    border-top: 1px solid #1a1a1a !important;
     padding-top: 20px !important;
   }
 
   .bunker-volver a, .bunker-volver a:visited {
-    color: #a63a50 !important; /* Rojo frío apagado */
+    color: #a63a50 !important;
     font-family: 'Courier New', Courier, monospace !important;
     font-size: 14px !important;
     text-decoration: none !important;
     letter-spacing: 0.1em;
-    opacity: 0.6;
+    opacity: 0.5;
+    transition: opacity 0.3s;
   }
 
   .bunker-volver a:hover {
@@ -65,6 +77,8 @@ HTML
 
 <div class="bunker-literario">
   <div class="bunker-contenido">
+
+    <div class="titulo-habitacion">SENTIMIENTOS DE CULPA</div>
 
     <p>Lavarme los dientes. Dar el paso. Mover el aire. Recordar. Recordar a los demás. Una flecha encorvada que sale de un agujero negro. Y frente al espejo: ¿me estrello o me quedo inmóvil?</p>
 
