@@ -1,37 +1,45 @@
 <style>
-  /* ESCUDO DE INVISIBILIDAD ABSOLUTA PARA EL ENCABEZADO DE GITHUB */
-  header, .site-header, #forkongithub, .position-relative.js-header-wrapper, 
-  .page-header, .page-content::before, [role="banner"] {
-    display: none !important;
-    visibility: hidden !important;
-    opacity: 0 !important;
-    height: 0 !important;
-    padding: 0 !important;
-    margin: 0 !important;
-  }
-
-  /* Forzamos a que tu espacio ocupe toda la pantalla desde el inicio absoluto */
+  /* CREAMOS UN LIENZO NUEVO QUE TAPA ABSOLUTAMENTE TODO LO DE GITHUB */
   html, body {
     background-color: #0d0d0d !important;
-    font-family: 'Courier New', Courier, monospace !important;
-    max-width: 650px;
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+  }
+
+  /* Este contenedor creará tu búnker limpio desde el borde superior de la pantalla */
+  .bunker-literario {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    background-color: #0d0d0d !important;
+    z-index: 999999 !important; /* Se coloca por encima de absolutamente todo */
+    overflow-y: auto !important; /* Permite hacer scroll si el texto es largo */
+    box-sizing: border-box !important;
+    padding: 80px 24px !important;
+  }
+
+  /* El contenedor del texto centrado */
+  .bunker-contenido {
+    max-width: 650px !important;
     margin: 0 auto !important;
-    padding: 60px 24px !important;
+    font-family: 'Courier New', Courier, monospace !important;
     line-height: 2.2 !important;
     letter-spacing: 0.05em;
-    position: relative !important;
-    top: 0 !important;
   }
   
-  /* Color morado amatista desgastado (clínico, nocturno y accesible) */
-  body, p, div {
+  /* Tu color morado amatista desgastado */
+  .bunker-contenido, .bunker-contenido p, .bunker-contenido div {
     color: #b3a7c4 !important; 
     font-family: 'Courier New', Courier, monospace !important;
     font-size: 17px !important;
   }
 
-  /* Título en un lavanda pálido y limpio, en mayúsculas y sin negrita */
-  h1, h2, h3, h3 a, a {
+  /* Título en un lavanda pálido, en mayúsculas y sin negrita */
+  .bunker-contenido h3 {
     color: #d1c7e0 !important; 
     font-family: 'Courier New', Courier, monospace !important;
     font-weight: normal !important;
@@ -39,8 +47,12 @@
     text-decoration: none !important;
     border-bottom: none !important;
     margin-bottom: 40px !important;
+    font-size: 18px !important;
   }
 </style>
+
+<div class="bunker-literario">
+  <div class="bunker-contenido">
 
 ### SENTIMIENTOS DE CULPA
 
@@ -67,3 +79,6 @@ Siento una culpable libertad cada vez que algo se rompe.
 Últimamente tiro los platos en vez de lavarlos.
 
 Tampoco me lavo mucho los dientes.
+
+  </div>
+</div>
