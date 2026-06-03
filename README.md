@@ -1,32 +1,38 @@
 <style>
-  /* OCULTAR EL ENCABEZADO AUTOMÁTICO DE GITHUB */
-  header, .site-header, #forkongithub, .position-relative.js-header-wrapper {
+  /* ESCUDO DE INVISIBILIDAD ABSOLUTA PARA EL ENCABEZADO DE GITHUB */
+  header, .site-header, #forkongithub, .position-relative.js-header-wrapper, 
+  .page-header, .page-content::before, [role="banner"] {
     display: none !important;
     visibility: hidden !important;
+    opacity: 0 !important;
     height: 0 !important;
     padding: 0 !important;
+    margin: 0 !important;
   }
 
+  /* Forzamos a que tu espacio ocupe toda la pantalla desde el inicio absoluto */
   html, body {
     background-color: #0d0d0d !important;
     font-family: 'Courier New', Courier, monospace !important;
     max-width: 650px;
-    margin: 50px auto;
-    padding: 0 24px;
+    margin: 0 auto !important;
+    padding: 60px 24px !important;
     line-height: 2.2 !important;
     letter-spacing: 0.05em;
+    position: relative !important;
+    top: 0 !important;
   }
   
-  /* Tono gris cemento / papel de archivo atenuado (neutro y clínico) */
+  /* Color morado amatista desgastado (clínico, nocturno y accesible) */
   body, p, div {
-    color: #cbd0c8 !important; 
+    color: #b3a7c4 !important; 
     font-family: 'Courier New', Courier, monospace !important;
     font-size: 17px !important;
   }
 
-  /* Título en mayúsculas puras, un poco más nítido, sin negrita */
+  /* Título en un lavanda pálido y limpio, en mayúsculas y sin negrita */
   h1, h2, h3, h3 a, a {
-    color: #e2e7e0 !important; 
+    color: #d1c7e0 !important; 
     font-family: 'Courier New', Courier, monospace !important;
     font-weight: normal !important;
     text-transform: uppercase;
