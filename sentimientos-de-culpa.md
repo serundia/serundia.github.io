@@ -1,5 +1,5 @@
 <style>
-  /* EL ESCUDO NEGRO TOTAL */
+  /* EL ESCUDO DE SOBERANÍA NEGRA ABSOLUTA */
   html, body {
     background-color: #0d0d0d !important;
     margin: 0 !important;
@@ -18,41 +18,43 @@
     z-index: 999999 !important;
     overflow-y: auto !important;
     box-sizing: border-box !important;
-    padding: 100px 24px !important; /* Más espacio arriba para que caiga centrado */
+    padding: 140px 24px !important; /* Mucho más espacio arriba: el texto se hunde en la oscuridad */
   }
 
-  /* TEXTO MÁS ESTRECHO: Genera mucho más vacío negro alrededor */
+  /* TEXTO MUY ESTRECHO: Crea muchísima más penumbra a los costados */
   .bunker-contenido {
-    max-width: 500px !important; 
+    max-width: 440px !important; 
     margin: 0 auto !important;
     font-family: 'Courier New', Courier, monospace !important;
-    line-height: 2.2 !important;
+    line-height: 2.3 !important; /* Un poco más de aire entre líneas */
     letter-spacing: 0.05em;
   }
   
-  /* Color morado amatista para el texto */
-  .bunker-contenido p, .bunker-contenido div {
+  /* Tu prosa en el morado amatista desgastado */
+  .bunker-contenido p {
     color: #b3a7c4 !important; 
     font-family: 'Courier New', Courier, monospace !important;
     font-size: 17px !important;
+    margin-bottom: 38px !important; /* Espaciado generoso entre párrafos */
   }
 
-  /* TÍTULO EN NARANJA VIBRANTE COPIANDO EL ESTILO DE MÁQUINA DE ESCRIBIR */
-  .titulo-habitacion {
-    color: #ff6633 !important; /* Naranja incandescente */
+  /* FORZAMOS EL TÍTULO EN NARANJA INCANDESCENTE */
+  .titulo-naranja {
+    color: #ff6633 !important; /* Naranja de emergencia/óxido vibrante */
     font-family: 'Courier New', Courier, monospace !important;
     font-weight: normal !important;
-    text-transform: uppercase;
-    font-size: 18px !important;
-    letter-spacing: 0.12em;
-    margin-bottom: 60px !important; /* Distancia generosa antes de empezar la prosa */
+    text-transform: uppercase !important;
+    font-size: 19px !important;
+    letter-spacing: 0.15em !important;
+    margin-bottom: 70px !important; /* Distancia abismal antes de que empiece la prosa */
+    display: block !important;
   }
 
-  /* El botón discreto para regresar al cartel luminoso */
+  /* El picaporte sutil para regresar a la entrada principal */
   .bunker-volver {
-    margin-top: 80px !important;
+    margin-top: 90px !important;
     border-top: 1px solid #1a1a1a !important;
-    padding-top: 20px !important;
+    padding-top: 25px !important;
   }
 
   .bunker-volver a, .bunker-volver a:visited {
@@ -69,16 +71,12 @@
     opacity: 1 !important;
     color: #ff3366 !important;
   }
-
-  .bunker-contenido p {
-    margin-bottom: 35px !important;
-  }
 </style>
 
 <div class="bunker-literario">
   <div class="bunker-contenido">
 
-    <div class="titulo-habitacion">SENTIMIENTOS DE CULPA</div>
+    <span class="titulo-naranja">SENTIMIENTOS DE CULPA</span>
 
     <p>Lavarme los dientes. Dar el paso. Mover el aire. Recordar. Recordar a los demás. Una flecha encorvada que sale de un agujero negro. Y frente al espejo: ¿me estrello o me quedo inmóvil?</p>
 
@@ -107,6 +105,3 @@
     <div class="bunker-volver">
       <a href="index.html">[ volver ]</a>
     </div>
-
-  </div>
-</div>
