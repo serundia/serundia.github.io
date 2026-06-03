@@ -109,19 +109,30 @@
 
   <!-- EL EXTERIOR ENCANDILANTE -->
   <div class="contenedor-cartel-playa">
-    
-    <!-- La flecha que delata al cartel -->
     <div class="flecha-indicadora">←</div>
-    
-    <!-- El cartel desgastado -->
     <div class="cartel-playa">LA PLAYA</div>
-    
   </div>
 
-  <!-- LA PROSA ESCONDIDA EN LA LUZ -->
+  <!-- LA PROSA PROPIA INUNDADA EN LA LUZ SUCIA -->
   <div class="playa-contenido">
     
-    <p>AQUÍ VA TU NUEVO TEXTO. El lector se desprende de la imagen quemada del cartel haciendo scroll hacia abajo para empezar a leer tu playa en la claridad sucia.</p>
+    <p>La sal sube por mis tobillos. Un plafón de vidrio opaco, sucio, liso. Pegado en el cielo derrite las nubes. La humedad caliente ocupa el aire. Olor aceitoso. No veo las caras.</p>
+
+    <p>El bar de sombrillas rojas. Mesas plásticas. Y círculos pegajosos. Nadie quiere nada pero todos nos sentamos con actitud.</p>
+
+    <p>Un sonido muy grueso me despega de la mesa.<br>
+    Olor a cuerpo y cloro.<br>
+    Se nubló y todos esperan que vuelva a salir el sol.<br>
+    Es un camión. Es una desproporción muy evidente.<br>
+    Tengo la nariz seca por dentro y resbalosa por fuera. Todos los pliegues transpiran su especialidad . Todo calienta. Coreografía de raquetas, abanicos, chapuzones.<br>
+    Un hombre de brazos marrones y pantorrillas delgadas contribuye prestando ayuda al camionero y su maniobra irrespetuosa.</p>
+
+    <p>Estoy quieta como un árbol que no puede meterse bajo su propia sombra.</p>
+    
+    <p>Los ventiladores revuelven. La actitud con la cual nos sentamos sigue manteniéndonos sentados.<br>
+    El agua si no es aceite es cerveza.</p>
+    
+    <p>Calmamos la sed con cacahuetes salados.</p>
 
     <div class="playa-volver">
       <a href="sentimientos-de-culpa.html">[ regresar a la penumbra de la cortina ]</a>
