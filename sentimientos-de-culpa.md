@@ -24,6 +24,7 @@
     font-family: 'Courier New', Courier, monospace !important;
     line-height: 2.3 !important;
     letter-spacing: 0.05em;
+    position: relative !important; /* Base para calcular el costado */
   }
   .bunker-contenido p {
     color: #b3a7c4 !important; 
@@ -42,45 +43,42 @@
     display: block !important;
   }
 
-  /* EL ESPACIO HACIA EL ABISMO */
-  .zona-transicion {
-    margin-top: 150px !important;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 60px;
-  }
-
-  /* EL CHISPAZO: LA PUERTA BLANCA QUE PARPADEA */
+  /* LA DISTRACCIÓN FIJA A LA IZQUIERDA */
   .puerta-blanca {
     display: block !important;
-    width: 40px !important;
-    height: 60px !important;
+    position: fixed !important;
+    /* Se posiciona a la izquierda del texto, con una distancia prudente */
+    top: 45% !important;
+    left: calc(50% - 360px) !important; 
+    width: 35px !important;
+    height: 55px !important;
     background-color: #ffffff !important;
     box-shadow: 0 0 20px #ffffff, 0 0 40px #ffffff !important;
-    animation: chispazo 1.5s infinite alternate !important;
+    animation: chispazo 1.2s infinite alternate !important; /* Parpadeo un poco más errático */
     cursor: pointer;
     transition: transform 0.3s;
+    z-index: 1000000 !important;
   }
   
   .puerta-blanca:hover {
     transform: scale(1.1);
-    box-shadow: 0 0 30px #ffffff, 0 0 60px #ffffff !important;
+    box-shadow: 0 0 35px #ffffff, 0 0 70px #ffffff !important;
   }
 
-  /* EFECTO FLUORESCENTE COMPORTÁNDOSE MAL */
+  /* CORTOCIRCUITO VISUAL COPORTÁNDOSE MAL */
   @keyframes chispazo {
     0%, 100% { opacity: 1; }
-    5% { opacity: 0.3; }
-    10% { opacity: 1; }
-    15% { opacity: 0.1; }
-    20% { opacity: 1; }
-    80% { opacity: 0.9; }
-    85% { opacity: 0.2; }
-    90% { opacity: 1; }
+    8% { opacity: 0.2; }
+    12% { opacity: 1; }
+    18% { opacity: 0.1; }
+    24% { opacity: 1; }
+    75% { opacity: 0.9; }
+    80% { opacity: 0.3; }
+    85% { opacity: 1; }
   }
 
   .bunker-volver {
+    margin-top: 100px !important;
     border-top: 1px solid #1a1a1a !important;
     padding-top: 25px !important;
     width: 100%;
@@ -93,9 +91,25 @@
     letter-spacing: 0.1em;
     opacity: 0.5;
   }
+  .bunker-volver a:hover {
+    opacity: 1 !important;
+    color: #ff3366 !important;
+  }
+
+  /* Ajuste para pantallas medianas/pequeñas para que no choque con el texto */
+  @media (max-width: 900px) {
+    .puerta-blanca {
+      position: static !important;
+      margin: 0 0 50px 0 !important;
+    }
+  }
 </style>
 
 <div class="bunker-literario">
+  
+  <!-- LA SEÑALÉTICA DE DISTRACCIÓN (FLOTANDO AL COSTADO) -->
+  <a href="la-playa.html" class="puerta-blanca" title="Salir a la luz"></a>
+
   <div class="bunker-contenido">
     <span class="titulo-naranja">SENTIMIENTOS DE CULPA</span>
     
@@ -112,13 +126,8 @@
     <p>Últimamente tiro los platos en vez de lavarlos.</p>
     <p>Tampoco me lavo mucho los dientes.</p>
 
-    <!-- LA SEÑALÉTICA FÍSICA -->
-    <div class="zona-transicion">
-      <a href="la-playa.html" class="puerta-blanca" title="Salir a la luz"></a>
-
-      <div class="bunker-volver">
-        <a href="index.html">[ volver al vestíbulo ]</a>
-      </div>
+    <div class="bunker-volver">
+      <a href="index.html">[ volver al vestíbulo ]</a>
     </div>
   </div>
 </div>
