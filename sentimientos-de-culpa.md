@@ -24,7 +24,7 @@
     font-family: 'Courier New', Courier, monospace !important;
     line-height: 2.3 !important;
     letter-spacing: 0.05em;
-    position: relative !important; /* Base para calcular el costado */
+    position: relative !important;
   }
   .bunker-contenido p {
     color: #b3a7c4 !important; 
@@ -43,38 +43,43 @@
     display: block !important;
   }
 
-  /* LA DISTRACCIÓN FIJA A LA IZQUIERDA */
-  .puerta-blanca {
+  /* LA RENDIJA DE LA CORTINA: LÍNEA BLANCA IRREGULAR Y PARPADEANTE */
+  .cortina-abstracta {
     display: block !important;
     position: fixed !important;
-    /* Se posiciona a la izquierda del texto, con una distancia prudente */
-    top: 45% !important;
-    left: calc(50% - 360px) !important; 
-    width: 35px !important;
-    height: 55px !important;
-    background-color: #ffffff !important;
-    box-shadow: 0 0 20px #ffffff, 0 0 40px #ffffff !important;
-    animation: chispazo 1.2s infinite alternate !important; /* Parpadeo un poco más errático */
+    top: 0 !important;
+    left: 15px !important; /* Pegada casi al margen izquierdo */
+    width: 3px !important; /* Espesor base muy fino */
+    height: 100% !important; /* Cruza la pantalla de arriba a abajo */
+    background: linear-gradient(to bottom, #ffffff 20%, #e6e6e6 50%, #ffffff 80%) !important;
+    
+    /* El truco de la irregularidad: bordes asimétricos y sombras desiguales */
+    border-radius: 2px 4px 1px 3px !important;
+    box-shadow: -1px 0 15px rgba(255,255,255,0.8), 2px 0 8px rgba(255,255,255,0.4) !important;
+    
+    animation: cortocircuito-lineal 2s infinite alternate !important;
     cursor: pointer;
-    transition: transform 0.3s;
     z-index: 1000000 !important;
+    transition: width 0.2s, left 0.2s;
   }
   
-  .puerta-blanca:hover {
-    transform: scale(1.1);
-    box-shadow: 0 0 35px #ffffff, 0 0 70px #ffffff !important;
+  /* Al pasar el ratón, la rendija se abre ligeramente, tentándote */
+  .cortina-abstracta:hover {
+    width: 6px !important;
+    left: 13px !important;
+    box-shadow: 0 0 25px #ffffff, 0 0 40px rgba(255,255,255,0.6) !important;
   }
 
-  /* CORTOCIRCUITO VISUAL COPORTÁNDOSE MAL */
-  @keyframes chispazo {
-    0%, 100% { opacity: 1; }
-    8% { opacity: 0.2; }
-    12% { opacity: 1; }
-    18% { opacity: 0.1; }
-    24% { opacity: 1; }
-    75% { opacity: 0.9; }
-    80% { opacity: 0.3; }
-    85% { opacity: 1; }
+  /* PARPADEO IRREGULAR (La luz sucia empuja por detrás) */
+  @keyframes cortocircuito-lineal {
+    0%, 100% { opacity: 0.9; transform: scaleX(1); }
+    7% { opacity: 0.2; transform: scaleX(0.7); }
+    10% { opacity: 1; transform: scaleX(1.2); }
+    14% { opacity: 0.1; transform: scaleX(0.5); }
+    18% { opacity: 0.9; transform: scaleX(1); }
+    50% { opacity: 0.8; transform: scaleX(0.9); }
+    82% { opacity: 0.3; transform: scaleX(0.6); }
+    86% { opacity: 1; transform: scaleX(1.3); }
   }
 
   .bunker-volver {
@@ -96,19 +101,19 @@
     color: #ff3366 !important;
   }
 
-  /* Ajuste para pantallas medianas/pequeñas para que no choque con el texto */
-  @media (max-width: 900px) {
-    .puerta-blanca {
-      position: static !important;
-      margin: 0 0 50px 0 !important;
+  /* En pantallas móviles se adapta para no estorbar el texto */
+  @media (max-width: 768px) {
+    .cortina-abstracta {
+      left: 4px !important;
+      width: 2px !important;
     }
   }
 </style>
 
 <div class="bunker-literario">
   
-  <!-- LA SEÑALÉTICA DE DISTRACCIÓN (FLOTANDO AL COSTADO) -->
-  <a href="la-playa.html" class="puerta-blanca" title="Salir a la luz"></a>
+  <!-- LA FISURA DE LUZ EN EL MARGEN IZQUIERDO -->
+  <a href="la-playa.html" class="cortina-abstracta" title="Correr la cortina"></a>
 
   <div class="bunker-contenido">
     <span class="titulo-naranja">SENTIMIENTOS DE CULPA</span>
