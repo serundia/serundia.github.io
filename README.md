@@ -1,3 +1,4 @@
+
 <style>
   html, body {
     background-color: #0d0d0d !important;
@@ -16,11 +17,11 @@
     font-size: 17px !important;
   }
 
-  /* Título con un brillo limpio, verdoso y contundente */
+  /* Título en mayúsculas puras, un poco más claro, pero SIN negrita */
   h1, h2, h3, h3 a, a {
     color: #cbdcbd !important; 
     font-family: 'Courier New', Courier, monospace !important;
-    font-weight: bold !important;
+    font-weight: normal !important; /* Grosor estándar de máquina de escribir */
     text-transform: uppercase;
     text-decoration: none !important;
     border-bottom: none !important;
@@ -28,17 +29,17 @@
   }
 </style>
 
-### SERUNDIA / SENTIMIENTOS DE CULPA
+### SENTIMIENTOS DE CULPA
 
-Lavarme los dientes. Dar el paso. Mover el aire. Recordar. Recordar a los demás. Soy una flecha encorvada que sale de un agujero negro y frente al espejo: ¿Me estrello? ¿O me quedo inmóvil? 
+Lavarme los dientes. Dar el paso. Mover el aire. Recordar. Recordar a los demás. Una flecha encorvada que sale de un agujero negro. Y frente al espejo: ¿me estrello o me quedo inmóvil? 
 
-Me duelen los 52 huesos de los pies— si es que no me falta ninguno. En el cuello. Falta la segunda vértebra. Otro diagnóstico tardío. 
+Me duelen los 52 huesos de los pies. Si es que no me falta ninguno. En el cuello: falta la segunda vértebra. Otro diagnóstico tardío. 
 
 Estoy cambiando la piel y duele.
 
 No quiero abrir las cortinas. Prefiero seguir respirando mis propios desechos. 
 
-Podría quitar las sillas y obtener más espacio. Sentarme me distrae. 
+Podría quitar las sillas y obtener más espacio. Estar sentada me distrae. 
 
 ¿Qué más puedo quitar? 
 
