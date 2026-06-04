@@ -45,14 +45,13 @@
     font-family: 'Courier New', Courier, monospace !important;
     line-height: 2.3 !important;
     letter-spacing: 0.05em;
-    position: relative !important;
   }
   .bunker-contenido p {
     color: #b3a7c4 !important; 
     font-size: 17px !important;
   }
 
-  /* IZQUIERDA: LA CORTINA HACIA LA PLAYA */
+  /* IZQUIERDA: LA CORTINA HACIA LA PLAYA (Sigue fija saboteando el ojo) */
   .cortina-abstracta {
     display: block !important;
     position: fixed !important;
@@ -68,12 +67,16 @@
     z-index: 1000000 !important;
   }
 
-  /* DERECHA: "MEMORIA" REUBICADA MÁS ABAJO Y AL MARGEN */
+  /* DERECHA: MEMORIA AHORA FLOTA EN EL FLUJO DEL TEXTO (SOLO AL FINAL) */
+  .zona-memoria-final {
+    margin-top: 80px !important;
+    display: flex !important;
+    justify-content: flex-end !important; /* Lo empuja a la derecha */
+    width: 100% !important;
+  }
+
   .puerta-recuerdo {
-    display: block !important;
-    position: fixed !important;
-    bottom: 40px !important; /* Desplazada hacia el suelo de la pantalla */
-    right: 25px !important;  /* Más pegada al margen derecho */
+    display: inline-block !important;
     color: #cccccc !important; 
     text-shadow: 1px 1px 2px rgba(255,255,255,0.2) !important;
     font-family: 'Courier New', Courier, monospace !important;
@@ -82,9 +85,10 @@
     text-transform: uppercase !important;
     letter-spacing: 0.2em !important;
     text-decoration: none !important;
-    opacity: 0.4;
-    z-index: 1000000 !important;
+    opacity: 0.5;
     transition: opacity 0.3s, color 0.3s, text-shadow 0.3s;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    padding-bottom: 4px;
   }
   .puerta-recuerdo:hover {
     opacity: 1 !important;
@@ -102,7 +106,7 @@
   }
 
   .bunker-volver {
-    margin-top: 100px !important;
+    margin-top: 60px !important;
     border-top: 1px solid #1a1a1a !important;
     padding-top: 25px !important;
     width: 100%;
@@ -116,22 +120,22 @@
     opacity: 0.5;
   }
 
-  @media (max-width: 900px) {
-    .puerta-recuerdo { position: static !important; display: block !important; margin-top: 40px; text-align: right; }
+  @media (max-width: 768px) {
     .cortina-abstracta { left: 4px !important; width: 2px !important; }
   }
 </style>
 
 <div class="bunker-literario">
   
-  <!-- INTERFERENCIAS LATERALES -->
+  <!-- LA CORTINA SE QUEDA FIJA A LA IZQUIERDA -->
   <a href="la-playa.html" class="cortina-abstracta" title="Abrir la cortina (La Playa)"></a>
-  <a href="el-gato-naranja.html" class="puerta-recuerdo">MEMORIA</a>
 
+  <!-- IMPACTO DEL TÍTULO -->
   <div class="contenedor-titulo-culpa">
     <span class="titulo-naranja">SENTIMIENTOS DE CULPA</span>
   </div>
 
+  <!-- EL CONTENIDO MORADO -->
   <div class="bunker-contenido">
     <p>Lavarme los dientes. Dar el paso. Mover el aire. Recordar. Recordar a los demás. Una flecha encorvada que sale del agujero negro. Y frente al espejo: ¿me estrello o me quedo inmóvil?</p>
     <br><br>
@@ -157,9 +161,13 @@
     <br><br>
     <p>Tampoco me lavo mucho los dientes.</p>
 
+    <!-- EL DISPARADOR PLATEADO APARECE JUSTO AQUÍ, AL TERMINAR LA LECTURA -->
+    <div class="zona-memoria-final">
+      <a href="el-gato-naranja.html" class="puerta-recuerdo">MEMORIA</a>
+    </div>
+
     <div class="bunker-volver">
       <a href="index.html">[ volver al vestíbulo ]</a>
     </div>
   </div>
 </div>
-
