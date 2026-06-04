@@ -51,7 +51,7 @@
     font-size: 17px !important;
   }
 
-  /* IZQUIERDA: LA CORTINA HACIA LA PLAYA (Sigue fija saboteando el ojo) */
+  /* LA CORTINA DE LA PLAYA (IZQUIERDA) */
   .cortina-abstracta {
     display: block !important;
     position: fixed !important;
@@ -67,33 +67,63 @@
     z-index: 1000000 !important;
   }
 
-  /* DERECHA: MEMORIA AHORA FLOTA EN EL FLUJO DEL TEXTO (SOLO AL FINAL) */
-  .zona-memoria-final {
-    margin-top: 80px !important;
+  /* EL SEMÁFORO DE 2 LUCES (ABAJO A LA DERECHA) */
+  .contenedor-semaforo {
+    margin-top: 100px !important;
     display: flex !important;
-    justify-content: flex-end !important; /* Lo empuja a la derecha */
+    justify-content: flex-end !important;
     width: 100% !important;
+    border-top: 1px solid #1a1a1a !important;
+    padding-top: 40px !important;
   }
 
-  .puerta-recuerdo {
-    display: inline-block !important;
-    color: #cccccc !important; 
-    text-shadow: 1px 1px 2px rgba(255,255,255,0.2) !important;
-    font-family: 'Courier New', Courier, monospace !important;
-    font-size: 14px !important;
-    font-weight: bold !important;
-    text-transform: uppercase !important;
-    letter-spacing: 0.2em !important;
-    text-decoration: none !important;
-    opacity: 0.5;
-    transition: opacity 0.3s, color 0.3s, text-shadow 0.3s;
-    border-bottom: 1px solid rgba(255,255,255,0.1);
-    padding-bottom: 4px;
+  .semaforo-caja {
+    background-color: #151515 !important;
+    border: 2px solid #262626 !important;
+    border-radius: 6px !important;
+    padding: 10px 8px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 12px !important;
+    width: 32px !important;
+    align-items: center !important;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.5) !important;
   }
-  .puerta-recuerdo:hover {
-    opacity: 1 !important;
-    color: #ffffff !important; 
-    text-shadow: 0 0 8px #ffffff, 0 0 15px rgba(200,200,200,0.5) !important;
+
+  .luz {
+    width: 18px !important;
+    height: 18px !important;
+    border-radius: 50% !important;
+    display: block !important;
+    transition: transform 0.2s, filter 0.2s;
+  }
+
+  /* ROJO: RETORNO AL VESTÍBULO */
+  .luz-roja {
+    background-color: #ff3333 !important;
+    box-shadow: 0 0 8px #ff3333, inset 0 0 4px rgba(255,255,255,0.6) !important;
+  }
+
+  /* AMARILLO: RECUERDOS (PARPADEO DE PRECAUCIÓN) */
+  .luz-amarilla {
+    background-color: #ffcc00 !important;
+    box-shadow: 0 0 8px #ffcc00, inset 0 0 4px rgba(255,255,255,0.6) !important;
+    animation: parpadeo-semaforo 1.5s infinite alternate !important;
+  }
+
+  .semaforo-caja a:hover .luz-roja {
+    transform: scale(1.15);
+    filter: brightness(1.3) drop-shadow(0 0 6px #ff3333) !important;
+  }
+
+  .semaforo-caja a:hover .luz-amarilla {
+    transform: scale(1.15);
+    filter: brightness(1.3) drop-shadow(0 0 6px #ffcc00) !important;
+  }
+
+  @keyframes parpadeo-semaforo {
+    0%, 100% { opacity: 1; filter: brightness(1); }
+    50% { opacity: 0.7; filter: brightness(0.8); }
   }
 
   @keyframes cortocircuito-lineal {
@@ -102,22 +132,6 @@
     10% { opacity: 1; transform: scaleX(1.2); }
     14% { opacity: 0.1; transform: scaleX(0.5); }
     50% { opacity: 0.8; transform: scaleX(0.9); }
-    86% { opacity: 1; transform: scaleX(1.3); }
-  }
-
-  .bunker-volver {
-    margin-top: 60px !important;
-    border-top: 1px solid #1a1a1a !important;
-    padding-top: 25px !important;
-    width: 100%;
-  }
-  .bunker-volver a, .bunker-volver a:visited {
-    color: #a63a50 !important;
-    font-family: 'Courier New', Courier, monospace !important;
-    font-size: 14px !important;
-    text-decoration: none !important;
-    letter-spacing: 0.1em;
-    opacity: 0.5;
   }
 
   @media (max-width: 768px) {
@@ -127,15 +141,14 @@
 
 <div class="bunker-literario">
   
-  <!-- LA CORTINA SE QUEDA FIJA A LA IZQUIERDA -->
   <a href="la-playa.html" class="cortina-abstracta" title="Abrir la cortina (La Playa)"></a>
 
-  <!-- IMPACTO DEL TÍTULO -->
+  <!-- TÍTULO -->
   <div class="contenedor-titulo-culpa">
     <span class="titulo-naranja">SENTIMIENTOS DE CULPA</span>
   </div>
 
-  <!-- EL CONTENIDO MORADO -->
+  <!-- TEXTO -->
   <div class="bunker-contenido">
     <p>Lavarme los dientes. Dar el paso. Mover el aire. Recordar. Recordar a los demás. Una flecha encorvada que sale del agujero negro. Y frente al espejo: ¿me estrello o me quedo inmóvil?</p>
     <br><br>
@@ -161,13 +174,19 @@
     <br><br>
     <p>Tampoco me lavo mucho los dientes.</p>
 
-    <!-- EL DISPARADOR PLATEADO APARECE JUSTO AQUÍ, AL TERMINAR LA LECTURA -->
-    <div class="zona-memoria-final">
-      <a href="el-gato-naranja.html" class="puerta-recuerdo">MEMORIA</a>
+    <!-- EL SEMÁFORO REGULADOR DE DOS POSICIONES -->
+    <div class="contenedor-semaforo">
+      <div class="semaforo-caja">
+        <!-- Luz Roja: Regresa al vestíbulo -->
+        <a href="index.html" title="Frenar - Volver a la entrada de Serundia">
+          <span class="luz luz-roja"></span>
+        </a>
+        <!-- Luz Amarillo Semáforo: Conecta con los recuerdos -->
+        <a href="el-gato-naranja.html" title="Precaución - Abrir los Recuerdos">
+          <span class="luz luz-amarilla"></span>
+        </a>
+      </div>
     </div>
 
-    <div class="bunker-volver">
-      <a href="index.html">[ volver al vestíbulo ]</a>
-    </div>
   </div>
 </div>
