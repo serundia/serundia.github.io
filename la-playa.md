@@ -1,6 +1,6 @@
 <style>
   html, body {
-    background-color: #eae6df !important; /* El color arena de la playa */
+    background-color: #eae6df !important;
     margin: 0 !important;
     padding: 0 !important;
     width: 100% !important;
@@ -29,7 +29,7 @@
   }
 
   .titulo-azul {
-    color: #4b6584 !important; /* Azul mar profundo */
+    color: #4b6584 !important;
     font-family: 'Courier New', Courier, monospace !important;
     font-weight: normal !important;
     text-transform: uppercase !important;
@@ -47,7 +47,6 @@
     letter-spacing: 0.05em;
   }
 
-  /* TU TEXTO EN UN AZUL PLOMO LIMPIO, RESPETANDO TUS BLOQUES */
   .playa-contenido p {
     color: #2c3e50 !important; 
     font-size: 17px !important;
@@ -80,28 +79,33 @@
     <span class="titulo-azul">LA PLAYA</span>
   </div>
 
-  <!-- TU TEXTO REAL, BLOQUE A BLOQUE -->
+  <!-- TU NUEVA ESTRUCTURA EXACTA -->
   <div class="playa-contenido">
     
-    <p>La sal sube por mis tobillos. Un plafón de vidrio opaco, sucio, liso. Pegado en el cielo derrite las nubes. La humedad caliente ocupa el aire. Olor aceitoso. No veo las caras.</p>
+    <p>La sal sube por mis tobillos.</p>
+    <p>Un plafón de vidrio opaco, sucio, liso. Pegado en el cielo derrite las nubes.</p>
+    <p>La humedad caliente ocupa el aire. Olor aceitoso. No veo las caras.</p>
     <br>
-    <p>El bar de sombrillas rojas. Mesas plásticas. Y círculos pegajosos. Nadie quiere nada pero todos nos sentamos con actitud.</p>
+    <p>El bar de sombrillas rojas. Mesas plásticas. Y círculos pegajosos.</p>
+    <p>Nadie quiere nada pero todos nos sentamos con actitud.</p>
     <br>
     <p>Un sonido muy grueso me despega de la mesa.</p>
     <p>Olor a cuerpo y cloro.</p>
     <p>Se nubló y todos esperan que vuelva a salir el sol.</p>
     <p>Es un camión. Es una desproporción muy evidente.</p>
-    <p>Tengo la nariz seca por dentro y resbalosa por fuera. Todos los pliegues transpiran su especialidad. Todo calienta. Coreografía de raquetas, abanicos, chapuzones.</p>
-    <p>Un hombre de brazos marrones y pantorrillas delgadas contribuye prestando ayuda al camionero y su maniobra irrespetuosa.</p>
+    <p>Tengo la nariz seca por dentro y resbalosa por fuera. Todos los pliegues transpiran su especialidad. Todo calienta.</p>
+    <p>Coreografía de raquetas, abanicos y chapuzones.</p>
+    <p>Un hombre de brazos marrones y pantorrillas blancas contribuye prestando ayuda al camionero y su maniobra irrespetuosa.</p>
     <br>
     <p>Estoy quieta como un árbol que no puede meterse bajo su propia sombra.</p>
     <br>
-    <p>Los ventiladores revuelven. La actitud con la cual nos sentamos sigue manteniéndonos sentados.</p>
+    <p>Los ventiladores revuelven.</p>
+    <p>La actitud con la cual nos sentamos sigue manteniéndonos sentados.</p>
     <p>El agua si no es aceite es cerveza.</p>
     <br>
     <p>Calmamos la sed con cacahuetes salados.</p>
 
-    <!-- RETORNO AL BÚNKER DE LA CULPA -->
+    <!-- RETORNO -->
     <div class="playa-volver">
       <a href="sentimientos-de-culpa.html">[ descorrer la cortina ]</a>
     </div>
