@@ -46,7 +46,7 @@
     user-select: none !important;
   }
 
-  /* LA PROSA EN AMARILLO SEMÁFORO DE NOCHE */
+  /* LA PROSA EN AMARILLO SEMÁFORO - ORACIONES EN UNA SOLA LÍNEA */
   .recuerdo-contenido {
     max-width: 440px !important;
     margin: 0 auto !important;
@@ -59,7 +59,7 @@
   .recuerdo-contenido p {
     color: #ffcc00 !important; /* Amarillo semáforo intacto */
     font-size: 17px !important;
-    margin-bottom: 38px !important;
+    margin-bottom: 24px !important; /* Espacio rítmico entre cada línea */
     text-shadow: 0 0 1px rgba(255, 204, 0, 0.3) !important;
   }
 
@@ -85,25 +85,38 @@
 
 <div class="bunker-recuerdo">
 
+  <!-- EL CARTEL -->
   <div class="contenedor-cartel-gato">
     <div class="cartel-gato">EL GATO NARANJA</div>
   </div>
 
+  <!-- LA PROSA FRAGMENTADA EN LÍNEAS ÚNICAS -->
   <div class="recuerdo-contenido">
     
-    <p>Si golpeaba las manos al as 12, Lara iba a volver. Llegaría corriendo. Por la derecha, por donde se iba al supermercado. Con la cabeza entre las rejas. Un ritual navideño. Mamá me acompañaba. Se iba después del primer aplauso.<br>
-    Nunca apareció. Lara.<br>
-    No lloraba por eso.</p>
-
-    <p>Lloré cuando abandonamos al gato naranja. Que en cambio volvió.<br>
-    Me quedo sin texto.</p>
-
-    <p>La vida es cruel cuando es tierna.<br>
-    Tener hijos es lo más tierno.<br>
-    También se abandonan los hijos.<br>
-    Me costaba tirar la cucharita del helado, la tirábamos juntas. Mi hermana y yo.</p>
-
-    <p>Bajé al gato naranja del coche. Sin bajarme. Empecé a llorar seis horas más tarde. Justo a las 12.</p>
+    <p>Si golpeaba las manos a las 12, Lara iba a volver.</p>
+    <p>Llegaría corriendo.</p>
+    <p>Por la derecha, por donde se iba al supermercado.</p>
+    <p>Con la cabeza entre las rejas.</p>
+    <p>Un ritual navideño.</p>
+    <p>Mamá me acompañaba.</p>
+    <p>Se iba después del primer aplauso.</p>
+    <p>Nunca apareció. Lara.</p>
+    <p>No lloraba por eso.</p>
+    <br>
+    <p>Lloré cuando abandonamos al gato naranja.</p>
+    <p>Que en cambio volvió.</p>
+    <p>Me quedo sin texto.</p>
+    <br>
+    <p>La vida es cruel cuando es tierna.</p>
+    <p>Tener hijos es lo más tierno.</p>
+    <p>También se abandonan los hijos.</p>
+    <p>Me costaba tirar la cucharita del helado, la tirábamos juntas.</p>
+    <p>Mi hermana y yo.</p>
+    <br>
+    <p>Bajé al gato naranja del coche.</p>
+    <p>Sin bajarme.</p>
+    <p>Empecé a llorar seis horas más tarde.</p>
+    <p>Justo a las 12.</p>
 
     <div class="recuerdo-volver">
       <a href="sentimientos-de-culpa.html">[ regresar a la penumbra de la cortina ]</a>
