@@ -19,55 +19,37 @@
     padding: 0 !important;
   }
 
-  .contenedor-titulo-culpa {
-    width: 100% !important;
-    height: 100vh !important;
-    display: flex !important;
-    justify-content: center !important;
-    align-items: center !important;
-    background-color: #0d0d0d !important;
-  }
-
-  .titulo-naranja {
-    color: #ff6633 !important;
-    font-family: 'Courier New', Courier, monospace !important;
-    font-weight: normal !important;
-    text-transform: uppercase !important;
-    font-size: 19px !important;
-    letter-spacing: 0.15em !important;
-    text-align: center !important;
-  }
-
+  /* LA PROSA INTRODUCTORIA (MORADA) SUBE AL INICIO SIN TÍTULO PREVIO */
   .bunker-contenido {
     max-width: 440px !important; 
     margin: 0 auto !important;
-    padding: 100px 24px 150px 24px !important;
+    padding: 140px 24px 150px 24px !important; /* Más aire arriba al no haber título */
     font-family: 'Courier New', Courier, monospace !important;
     line-height: 2.3 !important;
     letter-spacing: 0.05em;
   }
   .bunker-contenido p {
-    color: #b3a7c4 !important; 
+    color: #b3a7c4 !important; /* Tu morado característico */
     font-size: 17px !important;
   }
 
-  /* LA CORTINA DE LA PLAYA */
+  /* LA CORTINA REUBICADA: A LA DERECHA, MÁS ANCHA Y CÓMODA */
   .cortina-abstracta {
     display: block !important;
     position: fixed !important;
     top: 0 !important;
-    left: 15px !important;
-    width: 3px !important;
+    right: 40px !important; /* Despegada del borde derecho para que respire */
+    width: 8px !important;  /* Más gruesa: ahora es fácil acertar con el mouse */
     height: 100% !important;
     background: linear-gradient(to bottom, #ffffff 20%, #e6e6e6 50%, #ffffff 80%) !important;
-    border-radius: 2px 4px 1px 3px !important;
-    box-shadow: -1px 0 15px rgba(255,255,255,0.8), 2px 0 8px rgba(255,255,255,0.4) !important;
+    border-radius: 4px !important;
+    box-shadow: 0 0 15px rgba(255,255,255,0.7), 0 0 5px rgba(255,255,255,0.3) !important;
     animation: cortocircuito-lineal 2s infinite alternate !important;
     cursor: pointer;
     z-index: 1000000 !important;
   }
 
-  /* EL CONTENEDOR DEL SEMÁFORO */
+  /* EL SEMÁFORO CON VECTORES MATES */
   .contenedor-semaforo {
     margin-top: 100px !important;
     display: flex !important;
@@ -77,7 +59,6 @@
     padding-top: 40px !important;
   }
 
-  /* CAJA DEL SEMÁFORO AJUSTADA AL COMPONENTES VECTORIAL */
   .semaforo-caja {
     background-color: #151515 !important;
     border: 2px solid #262626 !important;
@@ -102,7 +83,6 @@
     transform: scale(1.1) !important;
   }
 
-  /* ANIMACIÓN SUTIL SÓLO PARA EL AMARILLO */
   .animacion-amarilla {
     animation: parpadeo-vectorial 1.5s infinite alternate !important;
   }
@@ -114,25 +94,23 @@
 
   @keyframes cortocircuito-lineal {
     0%, 100% { opacity: 0.9; transform: scaleX(1); }
-    7% { opacity: 0.2; transform: scaleX(0.7); }
-    10% { opacity: 1; transform: scaleX(1.2); }
-    14% { opacity: 0.1; transform: scaleX(0.5); }
+    7% { opacity: 0.2; transform: scaleX(0.8); }
+    10% { opacity: 1; transform: scaleX(1.1); }
+    14% { opacity: 0.1; transform: scaleX(0.6); }
     50% { opacity: 0.8; transform: scaleX(0.9); }
   }
 
   @media (max-width: 768px) {
-    .cortina-abstracta { left: 4px !important; width: 2px !important; }
+    .cortina-abstracta { right: 15px !important; width: 6px !important; }
   }
 </style>
 
 <div class="bunker-literario">
   
+  <!-- LA NUEVA CORTINA INTERACTIVA A LA DERECHA -->
   <a href="la-playa.html" class="cortina-abstracta" title="Abrir la cortina (La Playa)"></a>
 
-  <div class="contenedor-titulo-culpa">
-    <span class="titulo-naranja">SENTIMIENTOS DE CULPA</span>
-  </div>
-
+  <!-- EL CONTENIDO COMIENZA DIRECTAMENTE AQUÍ -->
   <div class="bunker-contenido">
     <p>Lavarme los dientes. Dar el paso. Mover el aire. Recordar. Recordar a los demás. Una flecha encorvada que sale del agujero negro. Y frente al espejo: ¿me estrello o me quedo inmóvil?</p>
     <br><br>
@@ -158,18 +136,18 @@
     <br><br>
     <p>Tampoco me lavo mucho los dientes.</p>
 
-    <!-- EL SEMÁFORO CON VECTORES MATES INALTERABLES -->
+    <!-- EL SEMÁFORO BLINDADO -->
     <div class="contenedor-semaforo">
       <div class="semaforo-caja">
         
-        <!-- Luz Roja: Color molecular #ff3366 blindado en código SVG plano -->
+        <!-- Luz Roja Carmín Serundia -->
         <a href="index.html" class="contenedor-luz-vectorial" title="Frenar - Volver a la entrada de Serundia">
           <svg width="18" height="18" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
             <circle cx="50" cy="50" r="50" fill="#ff3366" />
           </svg>
         </a>
 
-        <!-- Luz Amarilla: Color #ffcc00 -->
+        <!-- Luz Amarilla -->
         <a href="el-gato-naranja.html" class="contenedor-luz-vectorial animacion-amarilla" title="Precaución - Abrir los Recuerdos">
           <svg width="18" height="18" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
             <circle cx="50" cy="50" r="50" fill="#ffcc00" />
