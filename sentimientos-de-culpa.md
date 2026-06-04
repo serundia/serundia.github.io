@@ -1,4 +1,3 @@
-
 <style>
   html, body {
     background-color: #0d0d0d !important;
@@ -46,6 +45,7 @@
     font-family: 'Courier New', Courier, monospace !important;
     line-height: 2.3 !important;
     letter-spacing: 0.05em;
+    position: relative !important;
   }
   .bunker-contenido p {
     color: #b3a7c4 !important; 
@@ -68,14 +68,13 @@
     z-index: 1000000 !important;
   }
 
-  /* DERECHA: LA PALABRA "MEMORIA" EN PLATEADO METÁLICO */
+  /* DERECHA: "MEMORIA" REUBICADA MÁS ABAJO Y AL MARGEN */
   .puerta-recuerdo {
     display: block !important;
     position: fixed !important;
-    top: 50% !important;
-    right: 40px !important;
-    transform: translateY(-50%) !important;
-    color: #cccccc !important; /* Plateado base */
+    bottom: 40px !important; /* Desplazada hacia el suelo de la pantalla */
+    right: 25px !important;  /* Más pegada al margen derecho */
+    color: #cccccc !important; 
     text-shadow: 1px 1px 2px rgba(255,255,255,0.2) !important;
     font-family: 'Courier New', Courier, monospace !important;
     font-size: 14px !important;
@@ -89,7 +88,7 @@
   }
   .puerta-recuerdo:hover {
     opacity: 1 !important;
-    color: #ffffff !important; /* Brillo plateado al pasar el cursor */
+    color: #ffffff !important; 
     text-shadow: 0 0 8px #ffffff, 0 0 15px rgba(200,200,200,0.5) !important;
   }
 
@@ -125,7 +124,7 @@
 
 <div class="bunker-literario">
   
-  <!-- INTERFERENCIAS LATERALES (LAS DOS ENTRADAS) -->
+  <!-- INTERFERENCIAS LATERALES -->
   <a href="la-playa.html" class="cortina-abstracta" title="Abrir la cortina (La Playa)"></a>
   <a href="el-gato-naranja.html" class="puerta-recuerdo">MEMORIA</a>
 
@@ -163,3 +162,4 @@
     </div>
   </div>
 </div>
+
