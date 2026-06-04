@@ -1,3 +1,4 @@
+
 <style>
   html, body {
     background-color: #0d0d0d !important;
@@ -19,98 +20,74 @@
     padding: 0 !important;
   }
 
-  /* LA PROSA INTRODUCTORIA (MORADA) SUBE AL INICIO SIN TÍTULO PREVIO */
+  /* LA PROSA INTRODUCTORIA MORADA */
   .bunker-contenido {
     max-width: 440px !important; 
     margin: 0 auto !important;
-    padding: 140px 24px 150px 24px !important; /* Más aire arriba al no haber título */
+    padding: 140px 24px 150px 24px !important;
     font-family: 'Courier New', Courier, monospace !important;
     line-height: 2.3 !important;
     letter-spacing: 0.05em;
   }
   .bunker-contenido p {
-    color: #b3a7c4 !important; /* Tu morado característico */
+    color: #b3a7c4 !important; 
     font-size: 17px !important;
   }
 
-  /* LA CORTINA REUBICADA: A LA DERECHA, MÁS ANCHA Y CÓMODA */
-  .cortina-abstracta {
+  /* NUEVA LUZ: TRIÁNGULO FINO, SUSPENDIDO EN LOS 2/3 SUPERIORES */
+  .luz-triangular {
     display: block !important;
     position: fixed !important;
-    top: 0 !important;
-    right: 40px !important; /* Despegada del borde derecho para que respire */
-    width: 8px !important;  /* Más gruesa: ahora es fácil acertar con el mouse */
-    height: 100% !important;
-    background: linear-gradient(to bottom, #ffffff 20%, #e6e6e6 50%, #ffffff 80%) !important;
-    border-radius: 4px !important;
-    box-shadow: 0 0 15px rgba(255,255,255,0.7), 0 0 5px rgba(255,255,255,0.3) !important;
-    animation: cortocircuito-lineal 2s infinite alternate !important;
-    cursor: pointer;
+    
+    /* Posicionamiento: no toca el techo y se suspende a la derecha */
+    top: 8vh !important;       /* Margen superior para que NO toque el techo */
+    right: 50px !important;    /* Despegado del borde derecho */
+    
+    /* Dimensiones: ocupa aproximadamente los dos tercios superiores */
+    width: 0 !important;
+    height: 0 !important;
+    
+    /* Construcción geométrica del triángulo hacia abajo (ancho arriba, punta abajo) */
+    border-left: 5px solid transparent !important;  /* Lado izquierdo invisible */
+    border-right: 5px solid transparent !important; /* Lado derecho invisible */
+    border-top: 55vh solid #ffffff !important;      /* El cuerpo del triángulo en blanco, cayendo en vertical */
+    
+    /* Efecto de fulgor blanco sutil en los bordes */
+    filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.8)) !important;
+    
+    /* Comportamiento e interactividad */
+    cursor: pointer !important;
     z-index: 1000000 !important;
+    opacity: 0.7;
+    transition: opacity 0.3s, filter 0.3s !important;
   }
 
-  /* EL SEMÁFORO CON VECTORES MATES */
-  .contenedor-semaforo {
-    margin-top: 100px !important;
-    display: flex !important;
-    justify-content: flex-end !important;
-    width: 100% !important;
-    border-top: 1px solid #1a1a1a !important;
-    padding-top: 40px !important;
+  /* Animación orgánica de parpadeo suave, sin sacudidas */
+  .luz-triangular {
+    animation: pulsacion-sutil 3s infinite alternate !important;
   }
 
-  .semaforo-caja {
-    background-color: #151515 !important;
-    border: 2px solid #262626 !important;
-    border-radius: 6px !important;
-    padding: 10px 8px !important;
-    display: flex !important;
-    flex-direction: column !important;
-    gap: 12px !important;
-    width: 32px !important;
-    align-items: center !important;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.5) !important;
+  .luz-triangular:hover {
+    opacity: 1 !important;
+    filter: drop-shadow(0 0 15px rgba(255, 255, 255, 1)) !important;
   }
 
-  .contenedor-luz-vectorial {
-    width: 18px !important;
-    height: 18px !important;
-    display: block !important;
-    transition: transform 0.2s;
-  }
-
-  .contenedor-luz-vectorial:hover {
-    transform: scale(1.1) !important;
-  }
-
-  .animacion-amarilla {
-    animation: parpadeo-vectorial 1.5s infinite alternate !important;
-  }
-
-  @keyframes parpadeo-vectorial {
-    0%, 100% { opacity: 1; }
-    50% { opacity: 0.7; }
-  }
-
-  @keyframes cortocircuito-lineal {
-    0%, 100% { opacity: 0.9; transform: scaleX(1); }
-    7% { opacity: 0.2; transform: scaleX(0.8); }
-    10% { opacity: 1; transform: scaleX(1.1); }
-    14% { opacity: 0.1; transform: scaleX(0.6); }
-    50% { opacity: 0.8; transform: scaleX(0.9); }
+  @keyframes pulsacion-sutil {
+    0%, 100% { opacity: 0.6; }
+    50% { opacity: 0.85; }
   }
 
   @media (max-width: 768px) {
-    .cortina-abstracta { right: 15px !important; width: 6px !important; }
+    .luz-triangular { right: 20px !important; border-top-width: 50vh !important; }
   }
 </style>
 
 <div class="bunker-literario">
   
-  <!-- LA NUEVA CORTINA INTERACTIVA A LA DERECHA -->
-  <a href="la-playa.html" class="cortina-abstracta" title="Abrir la cortina (La Playa)"></a>
+  <!-- LA NUEVA AGUJA DE LUZ TRIANGULAR HACIA ABAJO (ENLACE A LA PLAYA) -->
+  <a href="la-playa.html" class="luz-triangular" title="Seguir la luz (La Playa)"></a>
 
-  <!-- EL CONTENIDO COMIENZA DIRECTAMENTE AQUÍ -->
+  <!-- PROSA SIN TÍTULO NI SEMÁFOROS -->
   <div class="bunker-contenido">
     <p>Lavarme los dientes. Dar el paso. Mover el aire. Recordar. Recordar a los demás. Una flecha encorvada que sale del agujero negro. Y frente al espejo: ¿me estrello o me quedo inmóvil?</p>
     <br><br>
@@ -135,27 +112,6 @@
     <p>Últimamente tiro los platos en vez de lavarlos.</p>
     <br><br>
     <p>Tampoco me lavo mucho los dientes.</p>
-
-    <!-- EL SEMÁFORO BLINDADO -->
-    <div class="contenedor-semaforo">
-      <div class="semaforo-caja">
-        
-        <!-- Luz Roja Carmín Serundia -->
-        <a href="index.html" class="contenedor-luz-vectorial" title="Frenar - Volver a la entrada de Serundia">
-          <svg width="18" height="18" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="50" cy="50" r="50" fill="#ff3366" />
-          </svg>
-        </a>
-
-        <!-- Luz Amarilla -->
-        <a href="el-gato-naranja.html" class="contenedor-luz-vectorial animacion-amarilla" title="Precaución - Abrir los Recuerdos">
-          <svg width="18" height="18" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="50" cy="50" r="50" fill="#ffcc00" />
-          </svg>
-        </a>
-
-      </div>
-    </div>
-
   </div>
+
 </div>
