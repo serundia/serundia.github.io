@@ -1,7 +1,7 @@
 <style>
   /* LA NOCHE LUMINOSA - COLORES MANTENIDOS */
   html, body {
-    background-color: #060a14 !important; /* El azul noche asfáltico mate */
+    background-color: #060a14 !important;
     margin: 0 !important;
     padding: 0 !important;
     width: 100% !important;
@@ -33,7 +33,7 @@
 
   /* EL CARTEL EN NARANJA CON EL DESTELLO BLANCO LUNA */
   .cartel-gato {
-    color: #ff6633 !important; /* Naranja intacto */
+    color: #ff6633 !important;
     font-family: 'Courier New', Courier, monospace !important;
     font-weight: bold !important;
     text-transform: uppercase !important;
@@ -56,38 +56,38 @@
   }
 
   .recuerdo-contenido p {
-    color: #ffcc00 !important; /* Amarillo semáforo intacto */
+    color: #ffcc00 !important;
     font-size: 17px !important;
     margin-bottom: 24px !important;
     text-shadow: 0 0 1px rgba(255, 204, 0, 0.3) !important;
   }
 
-  /* BOTÓN SALIR: CLONADO EXACTO DE ENTRAR */
+  /* BOTÓN SALIR: MÁS CHICO Y CON EL COLOR IDÉNTICO A SERUNDIA */
   .recuerdo-volver {
-    margin-top: 120px !important;
-    text-align: center !important; /* Centrado como en el vestíbulo */
+    margin-top: 140px !important;
+    text-align: center !important;
   }
 
   .recuerdo-volver a, .recuerdo-volver a:visited {
     display: inline-block !important;
-    color: #ff3366 !important; /* El rojo/rosa de Serundia */
+    color: #ff0055 !important; /* El fucsia/rosa idéntico de Serundia */
     font-family: 'Courier New', Courier, monospace !important;
-    font-size: 16px !important;
+    font-size: 13px !important; /* Más pequeño y sutil */
     font-weight: bold !important;
     text-transform: uppercase !important;
     letter-spacing: 0.2em !important;
     text-decoration: none !important;
-    border: 2px solid #ff3366 !important;
-    padding: 12px 34px !important;
+    border: 1.5px solid #ff0055 !important; /* Línea más fina */
+    padding: 8px 24px !important; /* Menos relleno, más compacto */
     border-radius: 4px !important;
     transition: background-color 0.3s, color 0.3s, box-shadow 0.3s !important;
-    box-shadow: 0 0 10px rgba(255, 51, 102, 0.2) !important;
+    box-shadow: 0 0 8px rgba(255, 0, 85, 0.15) !important;
   }
   
   .recuerdo-volver a:hover {
-    background-color: #ff3366 !important;
-    color: #060a14 !important; /* Fondo oscuro del búnker para el contraste */
-    box-shadow: 0 0 20px #ff3366, 0 0 40px rgba(255, 51, 102, 0.6) !important;
+    background-color: #ff0055 !important;
+    color: #060a14 !important;
+    box-shadow: 0 0 15px #ff0055, 0 0 30px rgba(255, 0, 85, 0.5) !important;
   }
 </style>
 
@@ -126,7 +126,7 @@
     <p>Empecé a llorar seis horas más tarde.</p>
     <p>Justo a las 12.</p>
 
-    <!-- EL BOTÓN SALIR EN ROJO DE SERUNDIA, CENTRADO Y ROTUNDO -->
+    <!-- EL BOTÓN SALIR AJUSTADO Y DE MARCA -->
     <div class="recuerdo-volver">
       <a href="index.html">SALIR</a>
     </div>
