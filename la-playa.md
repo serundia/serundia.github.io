@@ -47,7 +47,7 @@
     letter-spacing: 0.05em;
   }
 
-  /* LA PROSA EN UN AZUL SUTIL Y SEPARADA POR LÍNEAS */
+  /* TU TEXTO EN UN AZUL PLOMO LIMPIO, RESPETANDO TUS BLOQUES */
   .playa-contenido p {
     color: #2c3e50 !important; 
     font-size: 17px !important;
@@ -80,25 +80,28 @@
     <span class="titulo-azul">LA PLAYA</span>
   </div>
 
-  <!-- TEXTO EN LÍNEAS LIMPIAS -->
+  <!-- TU TEXTO REAL, BLOQUE A BLOQUE -->
   <div class="playa-contenido">
     
-    <p>El agua está tibia.</p>
-    <p>La consistencia de una gelatina blanda y transparente.</p>
-    <p>Apenas unas rayas movedizas de sol en el fondo arenoso.</p>
+    <p>La sal sube por mis tobillos. Un plafón de vidrio opaco, sucio, liso. Pegado en el cielo derrite las nubes. La humedad caliente ocupa el aire. Olor aceitoso. No veo las caras.</p>
     <br>
-    <p>La lona, azul por dentro,</p>
-    <p>resbalosa por fuera.</p>
-    <p>Todos los pliegues transpiran su especialidad.</p>
-    <p>Todo calienta.</p>
-    <p>Coreografía de raquetas, abanicos, chapuzones.</p>
+    <p>El bar de sombrillas rojas. Mesas plásticas. Y círculos pegajosos. Nadie quiere nada pero todos nos sentamos con actitud.</p>
     <br>
-    <p>Un hombre de brazos marrones y</p>
-    <p>espalda blanca camina de perfil a la orilla.</p>
-    <p>Lleva un ritmo constante.</p>
-    <p>El mismo paso largo que usaba en la ciudad.</p>
-    <p>Nadie lo espera.</p>
+    <p>Un sonido muy grueso me despega de la mesa.</p>
+    <p>Olor a cuerpo y cloro.</p>
+    <p>Se nubló y todos esperan que vuelva a salir el sol.</p>
+    <p>Es un camión. Es una desproporción muy evidente.</p>
+    <p>Tengo la nariz seca por dentro y resbalosa por fuera. Todos los pliegues transpiran su especialidad. Todo calienta. Coreografía de raquetas, abanicos, chapuzones.</p>
+    <p>Un hombre de brazos marrones y pantorrillas delgadas contribuye prestando ayuda al camionero y su maniobra irrespetuosa.</p>
+    <br>
+    <p>Estoy quieta como un árbol que no puede meterse bajo su propia sombra.</p>
+    <br>
+    <p>Los ventiladores revuelven. La actitud con la cual nos sentamos sigue manteniéndonos sentados.</p>
+    <p>El agua si no es aceite es cerveza.</p>
+    <br>
+    <p>Calmamos la sed con cacahuetes salados.</p>
 
+    <!-- RETORNO AL BÚNKER DE LA CULPA -->
     <div class="playa-volver">
       <a href="sentimientos-de-culpa.html">[ descorrer la cortina ]</a>
     </div>
