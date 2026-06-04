@@ -1,3 +1,4 @@
+
 <style>
   html, body {
     background-color: #0d0d0d !important;
@@ -95,37 +96,35 @@
     height: 18px !important;
     border-radius: 50% !important;
     display: block !important;
-    transition: transform 0.2s, filter 0.2s;
+    transition: transform 0.2s, opacity 0.2s, box-shadow 0.2s;
   }
 
-  /* LUZ ROJA BLINDADA: ROJO CARMÍN FRÍO (#ff3366) SIN ALTERACIÓN */
+  /* CORRECCIÓN INTEGRAL: ROJO CARMÍN PLANO SIN BRUMAS NI FILTROS */
   .luz-roja {
-    background-color: #ff3366 !important;
-    /* Ajustes mecánicos para que el navegador no distorsione el tono */
-    filter: contrast(1.25) brightness(1.1) !important;
-    box-shadow: 0 0 5px rgba(255, 51, 102, 0.6), inset 0 0 3px rgba(255,255,255,0.7) !important;
+    background-color: #ff3366 !important; /* El color molecular puro de tu cartel */
+    box-shadow: 0 0 6px rgba(255, 51, 102, 0.4) !important; /* Brillo exterior limpio y traslúcido */
   }
 
   /* AMARILLO SEMÁFORO */
   .luz-amarilla {
     background-color: #ffcc00 !important;
-    box-shadow: 0 0 8px #ffcc00, inset 0 0 4px rgba(255,255,255,0.6) !important;
+    box-shadow: 0 0 8px rgba(255, 204, 0, 0.4) !important;
     animation: parpadeo-semaforo 1.5s infinite alternate !important;
   }
 
   .semaforo-caja a:hover .luz-roja {
-    transform: scale(1.15);
-    filter: contrast(1.3) brightness(1.3) !important;
+    transform: scale(1.1) !important;
+    box-shadow: 0 0 12px #ff3366 !important; /* Intensifica el carmín genuino al pasar el ratón */
   }
 
   .semaforo-caja a:hover .luz-amarilla {
-    transform: scale(1.15);
-    filter: brightness(1.3) drop-shadow(0 0 6px #ffcc00) !important;
+    transform: scale(1.1) !important;
+    box-shadow: 0 0 12px #ffcc00 !important;
   }
 
   @keyframes parpadeo-semaforo {
-    0%, 100% { opacity: 1; filter: brightness(1); }
-    50% { opacity: 0.7; filter: brightness(0.8); }
+    0%, 100 { opacity: 1; }
+    50% { opacity: 0.7; }
   }
 
   @keyframes cortocircuito-lineal {
