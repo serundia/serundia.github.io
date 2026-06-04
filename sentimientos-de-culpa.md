@@ -51,7 +51,7 @@
     font-size: 17px !important;
   }
 
-  /* LA CORTINA DE LA PLAYA (IZQUIERDA) */
+  /* LA CORTINA DE LA PLAYA */
   .cortina-abstracta {
     display: block !important;
     position: fixed !important;
@@ -67,7 +67,7 @@
     z-index: 1000000 !important;
   }
 
-  /* EL SEMÁFORO DE 2 LUCES (ABAJO A LA DERECHA) */
+  /* EL SEMÁFORO DE 2 LUCES */
   .contenedor-semaforo {
     margin-top: 100px !important;
     display: flex !important;
@@ -98,13 +98,13 @@
     transition: transform 0.2s, filter 0.2s;
   }
 
-  /* ROJO: RETORNO AL VESTÍBULO */
+  /* ROJO SERUNDIA AJUSTADO EXACTO */
   .luz-roja {
-    background-color: #ff3333 !important;
-    box-shadow: 0 0 8px #ff3333, inset 0 0 4px rgba(255,255,255,0.6) !important;
+    background-color: #ff0055 !important;
+    box-shadow: 0 0 10px #ff0055, inset 0 0 4px rgba(255,255,255,0.6) !important;
   }
 
-  /* AMARILLO: RECUERDOS (PARPADEO DE PRECAUCIÓN) */
+  /* AMARILLO SEMÁFORO */
   .luz-amarilla {
     background-color: #ffcc00 !important;
     box-shadow: 0 0 8px #ffcc00, inset 0 0 4px rgba(255,255,255,0.6) !important;
@@ -113,7 +113,7 @@
 
   .semaforo-caja a:hover .luz-roja {
     transform: scale(1.15);
-    filter: brightness(1.3) drop-shadow(0 0 6px #ff3333) !important;
+    filter: brightness(1.3) drop-shadow(0 0 8px #ff0055) !important;
   }
 
   .semaforo-caja a:hover .luz-amarilla {
@@ -143,12 +143,10 @@
   
   <a href="la-playa.html" class="cortina-abstracta" title="Abrir la cortina (La Playa)"></a>
 
-  <!-- TÍTULO -->
   <div class="contenedor-titulo-culpa">
     <span class="titulo-naranja">SENTIMIENTOS DE CULPA</span>
   </div>
 
-  <!-- TEXTO -->
   <div class="bunker-contenido">
     <p>Lavarme los dientes. Dar el paso. Mover el aire. Recordar. Recordar a los demás. Una flecha encorvada que sale del agujero negro. Y frente al espejo: ¿me estrello o me quedo inmóvil?</p>
     <br><br>
@@ -174,14 +172,11 @@
     <br><br>
     <p>Tampoco me lavo mucho los dientes.</p>
 
-    <!-- EL SEMÁFORO REGULADOR DE DOS POSICIONES -->
     <div class="contenedor-semaforo">
       <div class="semaforo-caja">
-        <!-- Luz Roja: Regresa al vestíbulo -->
         <a href="index.html" title="Frenar - Volver a la entrada de Serundia">
           <span class="luz luz-roja"></span>
         </a>
-        <!-- Luz Amarillo Semáforo: Conecta con los recuerdos -->
         <a href="el-gato-naranja.html" title="Precaución - Abrir los Recuerdos">
           <span class="luz luz-amarilla"></span>
         </a>
