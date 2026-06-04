@@ -17,13 +17,12 @@
     z-index: 999999 !important;
     overflow-y: auto !important;
     box-sizing: border-box !important;
-    padding: 0 !important; /* Quitamos el padding fijo para controlar el espacio con el scroll */
+    padding: 0 !important;
   }
 
-  /* EL ESPACIO INICIAL PARA EL TÍTULO */
   .contenedor-titulo-culpa {
     width: 100% !important;
-    height: 100vh !important; /* Ocupa la pantalla entera al entrar */
+    height: 100vh !important;
     display: flex !important;
     justify-content: center !important;
     align-items: center !important;
@@ -40,11 +39,10 @@
     text-align: center !important;
   }
 
-  /* EL CONTENIDO MORADO TRAS EL ENORME ESPACIO NEGRO */
   .bunker-contenido {
     max-width: 440px !important; 
     margin: 0 auto !important;
-    padding: 100px 24px 150px 24px !important; /* Espacio antes y después de la prosa */
+    padding: 100px 24px 150px 24px !important;
     font-family: 'Courier New', Courier, monospace !important;
     line-height: 2.3 !important;
     letter-spacing: 0.05em;
@@ -52,10 +50,9 @@
   .bunker-contenido p {
     color: #b3a7c4 !important; 
     font-size: 17px !important;
-    margin-bottom: 38px !important;
   }
 
-  /* LA FISURA DE LA CORTINA */
+  /* IZQUIERDA: LA CORTINA HACIA LA PLAYA */
   .cortina-abstracta {
     display: block !important;
     position: fixed !important;
@@ -69,12 +66,31 @@
     animation: cortocircuito-lineal 2s infinite alternate !important;
     cursor: pointer;
     z-index: 1000000 !important;
-    transition: width 0.2s, left 0.2s;
   }
-  .cortina-abstracta:hover {
-    width: 6px !important;
-    left: 13px !important;
-    box-shadow: 0 0 25px #ffffff, 0 0 40px rgba(255,255,255,0.6) !important;
+
+  /* DERECHA: LA PALABRA "MEMORIA" EN PLATEADO METÁLICO */
+  .puerta-recuerdo {
+    display: block !important;
+    position: fixed !important;
+    top: 50% !important;
+    right: 40px !important;
+    transform: translateY(-50%) !important;
+    color: #cccccc !important; /* Plateado base */
+    text-shadow: 1px 1px 2px rgba(255,255,255,0.2) !important;
+    font-family: 'Courier New', Courier, monospace !important;
+    font-size: 14px !important;
+    font-weight: bold !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.2em !important;
+    text-decoration: none !important;
+    opacity: 0.4;
+    z-index: 1000000 !important;
+    transition: opacity 0.3s, color 0.3s, text-shadow 0.3s;
+  }
+  .puerta-recuerdo:hover {
+    opacity: 1 !important;
+    color: #ffffff !important; /* Brillo plateado al pasar el cursor */
+    text-shadow: 0 0 8px #ffffff, 0 0 15px rgba(200,200,200,0.5) !important;
   }
 
   @keyframes cortocircuito-lineal {
@@ -82,9 +98,7 @@
     7% { opacity: 0.2; transform: scaleX(0.7); }
     10% { opacity: 1; transform: scaleX(1.2); }
     14% { opacity: 0.1; transform: scaleX(0.5); }
-    18% { opacity: 0.9; transform: scaleX(1); }
     50% { opacity: 0.8; transform: scaleX(0.9); }
-    82% { opacity: 0.3; transform: scaleX(0.6); }
     86% { opacity: 1; transform: scaleX(1.3); }
   }
 
@@ -102,38 +116,46 @@
     letter-spacing: 0.1em;
     opacity: 0.5;
   }
-  .bunker-volver a:hover {
-    opacity: 1 !important;
-    color: #ff3366 !important;
-  }
 
-  @media (max-width: 768px) {
+  @media (max-width: 900px) {
+    .puerta-recuerdo { position: static !important; display: block !important; margin-top: 40px; text-align: right; }
     .cortina-abstracta { left: 4px !important; width: 2px !important; }
   }
 </style>
 
 <div class="bunker-literario">
   
-  <a href="la-playa.html" class="cortina-abstracta" title="Correr la cortina"></a>
+  <!-- INTERFERENCIAS LATERALES (LAS DOS ENTRADAS) -->
+  <a href="la-playa.html" class="cortina-abstracta" title="Abrir la cortina (La Playa)"></a>
+  <a href="el-gato-naranja.html" class="puerta-recuerdo">MEMORIA</a>
 
-  <!-- IMPACTO DEL TÍTULO -->
   <div class="contenedor-titulo-culpa">
     <span class="titulo-naranja">SENTIMIENTOS DE CULPA</span>
   </div>
 
-  <!-- EL ABISMO SE RECORRE HACIENDO SCROLL HACIA ABAJO -->
   <div class="bunker-contenido">
     <p>Lavarme los dientes. Dar el paso. Mover el aire. Recordar. Recordar a los demás. Una flecha encorvada que sale del agujero negro. Y frente al espejo: ¿me estrello o me quedo inmóvil?</p>
+    <br><br>
     <p>Me duelen los 52 huesos de los pies. Si es que no me falta ninguno. En el cuello: falta la segunda vértebra. Otro diagnóstico tardío.</p>
+    <br><br>
     <p>Estoy cambiando la piel y duele.</p>
+    <br><br>
     <p>No quiero abrir las cortinas. Prefiero seguir respirando mis propios desechos.</p>
+    <br><br>
     <p>Podría quitar las sillas y obtener más espacio. Estar sentada me distrae.</p>
+    <br><br>
     <p>¿Qué más puedo quitar?</p>
+    <br><br>
     <p>No es que no me gusten los objetos. Es que me aburren.</p>
+    <br><br>
     <p>¿Hay culpa en eso?</p>
+    <br><br>
     <p>En querer perder las cosas.</p>
+    <br><br>
     <p>Siento una culpable libertad cada vez que algo se rompe.</p>
+    <br><br>
     <p>Últimamente tiro los platos en vez de lavarlos.</p>
+    <br><br>
     <p>Tampoco me lavo mucho los dientes.</p>
 
     <div class="bunker-volver">
