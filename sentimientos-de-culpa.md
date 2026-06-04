@@ -98,10 +98,10 @@
     transition: transform 0.2s, filter 0.2s;
   }
 
-  /* ROJO SERUNDIA AJUSTADO EXACTO */
+  /* LUZ ROJA: COLOR LIMPIO SIN DISTORSIÓN DE NEÓN */
   .luz-roja {
-    background-color: #ff0055 !important;
-    box-shadow: 0 0 10px #ff0055, inset 0 0 4px rgba(255,255,255,0.6) !important;
+    background-color: #ff0055 !important; /* Tono matriz idéntico a Serundia */
+    box-shadow: 0 0 4px #ff0055, inset 0 0 2px rgba(255,255,255,0.5) !important;
   }
 
   /* AMARILLO SEMÁFORO */
@@ -113,7 +113,7 @@
 
   .semaforo-caja a:hover .luz-roja {
     transform: scale(1.15);
-    filter: brightness(1.3) drop-shadow(0 0 8px #ff0055) !important;
+    filter: brightness(1.2) !important;
   }
 
   .semaforo-caja a:hover .luz-amarilla {
