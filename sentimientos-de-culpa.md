@@ -1,4 +1,3 @@
-
 <style>
   html, body {
     background-color: #0d0d0d !important;
@@ -68,7 +67,7 @@
     z-index: 1000000 !important;
   }
 
-  /* EL SEMÁFORO DE 2 LUCES */
+  /* EL CONTENEDOR DEL SEMÁFORO */
   .contenedor-semaforo {
     margin-top: 100px !important;
     display: flex !important;
@@ -78,6 +77,7 @@
     padding-top: 40px !important;
   }
 
+  /* CAJA DEL SEMÁFORO AJUSTADA AL COMPONENTES VECTORIAL */
   .semaforo-caja {
     background-color: #151515 !important;
     border: 2px solid #262626 !important;
@@ -91,39 +91,24 @@
     box-shadow: 0 4px 12px rgba(0,0,0,0.5) !important;
   }
 
-  .luz {
+  .contenedor-luz-vectorial {
     width: 18px !important;
     height: 18px !important;
-    border-radius: 50% !important;
     display: block !important;
-    transition: transform 0.2s, opacity 0.2s, box-shadow 0.2s;
+    transition: transform 0.2s;
   }
 
-  /* CORRECCIÓN INTEGRAL: ROJO CARMÍN PLANO SIN BRUMAS NI FILTROS */
-  .luz-roja {
-    background-color: #ff3366 !important; /* El color molecular puro de tu cartel */
-    box-shadow: 0 0 6px rgba(255, 51, 102, 0.4) !important; /* Brillo exterior limpio y traslúcido */
-  }
-
-  /* AMARILLO SEMÁFORO */
-  .luz-amarilla {
-    background-color: #ffcc00 !important;
-    box-shadow: 0 0 8px rgba(255, 204, 0, 0.4) !important;
-    animation: parpadeo-semaforo 1.5s infinite alternate !important;
-  }
-
-  .semaforo-caja a:hover .luz-roja {
+  .contenedor-luz-vectorial:hover {
     transform: scale(1.1) !important;
-    box-shadow: 0 0 12px #ff3366 !important; /* Intensifica el carmín genuino al pasar el ratón */
   }
 
-  .semaforo-caja a:hover .luz-amarilla {
-    transform: scale(1.1) !important;
-    box-shadow: 0 0 12px #ffcc00 !important;
+  /* ANIMACIÓN SUTIL SÓLO PARA EL AMARILLO */
+  .animacion-amarilla {
+    animation: parpadeo-vectorial 1.5s infinite alternate !important;
   }
 
-  @keyframes parpadeo-semaforo {
-    0%, 100 { opacity: 1; }
+  @keyframes parpadeo-vectorial {
+    0%, 100% { opacity: 1; }
     50% { opacity: 0.7; }
   }
 
@@ -173,14 +158,24 @@
     <br><br>
     <p>Tampoco me lavo mucho los dientes.</p>
 
+    <!-- EL SEMÁFORO CON VECTORES MATES INALTERABLES -->
     <div class="contenedor-semaforo">
       <div class="semaforo-caja">
-        <a href="index.html" title="Frenar - Volver a la entrada de Serundia">
-          <span class="luz luz-roja"></span>
+        
+        <!-- Luz Roja: Color molecular #ff3366 blindado en código SVG plano -->
+        <a href="index.html" class="contenedor-luz-vectorial" title="Frenar - Volver a la entrada de Serundia">
+          <svg width="18" height="18" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="50" cy="50" r="50" fill="#ff3366" />
+          </svg>
         </a>
-        <a href="el-gato-naranja.html" title="Precaución - Abrir los Recuerdos">
-          <span class="luz luz-amarilla"></span>
+
+        <!-- Luz Amarilla: Color #ffcc00 -->
+        <a href="el-gato-naranja.html" class="contenedor-luz-vectorial animacion-amarilla" title="Precaución - Abrir los Recuerdos">
+          <svg width="18" height="18" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="50" cy="50" r="50" fill="#ffcc00" />
+          </svg>
         </a>
+
       </div>
     </div>
 
