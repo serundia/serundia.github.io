@@ -1,4 +1,3 @@
-
 <style>
   /* LA NOCHE LUMINOSA - COLORES MANTENIDOS */
   html, body {
@@ -59,27 +58,36 @@
   .recuerdo-contenido p {
     color: #ffcc00 !important; /* Amarillo semáforo intacto */
     font-size: 17px !important;
-    margin-bottom: 24px !important; /* Espacio rítmico entre cada línea */
+    margin-bottom: 24px !important;
     text-shadow: 0 0 1px rgba(255, 204, 0, 0.3) !important;
   }
 
+  /* BOTÓN SALIR: CLONADO EXACTO DE ENTRAR */
   .recuerdo-volver {
     margin-top: 120px !important;
-    border-top: 1px solid #141f30 !important;
-    padding-top: 25px !important;
+    text-align: center !important; /* Centrado como en el vestíbulo */
   }
 
   .recuerdo-volver a, .recuerdo-volver a:visited {
-    color: #4b5c73 !important;
+    display: inline-block !important;
+    color: #ff3366 !important; /* El rojo/rosa de Serundia */
     font-family: 'Courier New', Courier, monospace !important;
-    font-size: 14px !important;
+    font-size: 16px !important;
+    font-weight: bold !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.2em !important;
     text-decoration: none !important;
-    letter-spacing: 0.1em;
+    border: 2px solid #ff3366 !important;
+    padding: 12px 34px !important;
+    border-radius: 4px !important;
+    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s !important;
+    box-shadow: 0 0 10px rgba(255, 51, 102, 0.2) !important;
   }
   
   .recuerdo-volver a:hover {
-    color: #ffcc00 !important;
-    text-shadow: 0 0 8px #ffcc00 !important;
+    background-color: #ff3366 !important;
+    color: #060a14 !important; /* Fondo oscuro del búnker para el contraste */
+    box-shadow: 0 0 20px #ff3366, 0 0 40px rgba(255, 51, 102, 0.6) !important;
   }
 </style>
 
@@ -90,7 +98,7 @@
     <div class="cartel-gato">EL GATO NARANJA</div>
   </div>
 
-  <!-- LA PROSA FRAGMENTADA EN LÍNEAS ÚNICAS -->
+  <!-- LA PROSA FRAGMENTADA -->
   <div class="recuerdo-contenido">
     
     <p>Si golpeaba las manos a las 12, Lara iba a volver.</p>
@@ -118,8 +126,9 @@
     <p>Empecé a llorar seis horas más tarde.</p>
     <p>Justo a las 12.</p>
 
+    <!-- EL BOTÓN SALIR EN ROJO DE SERUNDIA, CENTRADO Y ROTUNDO -->
     <div class="recuerdo-volver">
-      <a href="sentimientos-de-culpa.html">[ regresar a la penumbra de la cortina ]</a>
+      <a href="index.html">SALIR</a>
     </div>
 
   </div>
