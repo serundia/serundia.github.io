@@ -1,5 +1,6 @@
+
 <style>
-  /* LA NOCHE LUMINOSA - COLORES MANTENIDOS */
+  /* LA NOCHE LUMINOSA */
   html, body {
     background-color: #060a14 !important;
     margin: 0 !important;
@@ -21,7 +22,6 @@
     padding: 0 !important;
   }
 
-  /* EL CARTEL EN EL MEDIO */
   .contenedor-cartel-gato {
     width: 100% !important;
     height: 100vh !important;
@@ -31,7 +31,6 @@
     box-sizing: border-box;
   }
 
-  /* EL CARTEL EN NARANJA CON EL DESTELLO BLANCO LUNA */
   .cartel-gato {
     color: #ff6633 !important;
     font-family: 'Courier New', Courier, monospace !important;
@@ -45,7 +44,6 @@
     user-select: none !important;
   }
 
-  /* LA PROSA EN AMARILLO SEMÁFORO - ORACIONES EN UNA SOLA LÍNEA */
   .recuerdo-contenido {
     max-width: 440px !important;
     margin: 0 auto !important;
@@ -62,43 +60,34 @@
     text-shadow: 0 0 1px rgba(255, 204, 0, 0.3) !important;
   }
 
-  /* BOTÓN SALIR: MÁS CHICO Y CON EL COLOR IDÉNTICO A SERUNDIA */
+  /* TEXTO ENTRE CORCHETES IDÉNTICO A "ENTRAR" */
   .recuerdo-volver {
     margin-top: 140px !important;
-    text-align: center !important;
+    text-align: left !important; /* Alineación limpia con la prosa */
   }
 
   .recuerdo-volver a, .recuerdo-volver a:visited {
-    display: inline-block !important;
-    color: #ff0055 !important; /* El fucsia/rosa idéntico de Serundia */
+    color: #ff0055 !important; /* Fucsia Serundia exacto */
     font-family: 'Courier New', Courier, monospace !important;
-    font-size: 13px !important; /* Más pequeño y sutil */
-    font-weight: bold !important;
-    text-transform: uppercase !important;
-    letter-spacing: 0.2em !important;
+    font-size: 14px !important;
     text-decoration: none !important;
-    border: 1.5px solid #ff0055 !important; /* Línea más fina */
-    padding: 8px 24px !important; /* Menos relleno, más compacto */
-    border-radius: 4px !important;
-    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s !important;
-    box-shadow: 0 0 8px rgba(255, 0, 85, 0.15) !important;
+    letter-spacing: 0.1em;
+    opacity: 0.6;
+    transition: opacity 0.3s, text-shadow 0.3s;
   }
   
   .recuerdo-volver a:hover {
-    background-color: #ff0055 !important;
-    color: #060a14 !important;
-    box-shadow: 0 0 15px #ff0055, 0 0 30px rgba(255, 0, 85, 0.5) !important;
+    opacity: 1 !important;
+    text-shadow: 0 0 8px #ff0055, 0 0 15px rgba(255, 0, 85, 0.5) !important;
   }
 </style>
 
 <div class="bunker-recuerdo">
 
-  <!-- EL CARTEL -->
   <div class="contenedor-cartel-gato">
     <div class="cartel-gato">EL GATO NARANJA</div>
   </div>
 
-  <!-- LA PROSA FRAGMENTADA -->
   <div class="recuerdo-contenido">
     
     <p>Si golpeaba las manos a las 12, Lara iba a volver.</p>
@@ -126,9 +115,9 @@
     <p>Empecé a llorar seis horas más tarde.</p>
     <p>Justo a las 12.</p>
 
-    <!-- EL BOTÓN SALIR AJUSTADO Y DE MARCA -->
+    <!-- ENLACE TEXTUAL IDÉNTICO AL INICIO DE LA OBRA -->
     <div class="recuerdo-volver">
-      <a href="index.html">SALIR</a>
+      <a href="index.html">[ salir ]</a>
     </div>
 
   </div>
