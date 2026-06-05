@@ -53,33 +53,37 @@
     margin-bottom: 24px !important;
   }
 
-  .playa-volver {
+  /* NUEVA NAVEGACIÓN INTEGRADA AL RITMO DEL TEXTO */
+  .playa-opciones {
     margin-top: 120px !important;
     border-top: 1px solid #d1ccc0 !important;
-    padding-top: 25px !important;
+    padding-top: 30px !important;
+    font-family: 'Courier New', Courier, monospace !important;
+    font-size: 16px !important;
+    letter-spacing: 0.05em;
+    color: #2c3e50 !important;
+    display: flex !important;
+    gap: 40px !important; /* Separación limpia entre las dos palabras */
   }
 
-  .playa-volver a, .playa-volver a:visited {
-    color: #a5b1c2 !important;
-    font-family: 'Courier New', Courier, monospace !important;
-    font-size: 14px !important;
+  .playa-opciones a, .playa-opciones a:visited {
+    color: #4b6584 !important; /* Mismo azul plomo */
     text-decoration: none !important;
-    letter-spacing: 0.1em;
+    font-weight: bold !important;
+    transition: color 0.2s !important;
   }
   
-  .playa-volver a:hover {
-    color: #4b6584 !important;
+  .playa-opciones a:hover {
+    color: #ff3366 !important; /* Destello carmín sutil al tocarlos */
   }
 </style>
 
 <div class="bunker-playa">
 
-  <!-- TÍTULO -->
   <div class="contenedor-titulo-playa">
     <span class="titulo-azul">LA PLAYA</span>
   </div>
 
-  <!-- TU NUEVA ESTRUCTURA EXACTA -->
   <div class="playa-contenido">
     
     <p>La sal sube por mis tobillos.</p>
@@ -105,9 +109,10 @@
     <br>
     <p>Calmamos la sed con cacahuetes salados.</p>
 
-    <!-- RETORNO -->
-    <div class="playa-volver">
-      <a href="sentimientos-de-culpa.html">[ descorrer la cortina ]</a>
+    <!-- EL DILEMA DEL TEXTO -->
+    <div class="playa-opciones">
+      <a href="el-gato-naranja.html">quiero</a>
+      <a href="index.html">no quiero</a>
     </div>
 
   </div>
