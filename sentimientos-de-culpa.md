@@ -19,9 +19,9 @@
     padding: 0 !important;
   }
 
-  /* CAJA MUCHO MÁS ANCHA PARA QUE LAS FRASES RESPIREN ENTERAS */
+  /* Ancho expandido para que tus nuevas agrupaciones respiren en horizontal */
   .bunker-contenido {
-    max-width: 680px !important; /* Pasamos de 460px a 680px para dar aire total */
+    max-width: 680px !important; 
     margin: 0 auto !important;
     padding: 140px 24px 150px 24px !important;
     font-family: 'Courier New', Courier, monospace !important;
@@ -29,7 +29,6 @@
     letter-spacing: 0.05em;
   }
   
-  /* Ajuste sutil del tamaño a 16px para garantizar que todo quepa en una sola línea */
   .bunker-contenido p {
     color: #b3a7c4 !important; 
     font-size: 16px !important;
@@ -75,26 +74,20 @@
   
   <a href="la-playa.html" class="luz-triangular" title="Seguir la luz (La Playa)"></a>
 
+  <!-- TU ÚLTIMA ESTRUCTURA EXACTA -->
   <div class="bunker-contenido">
-    <p>Lavarme los dientes. Dar el paso. Mover el aire.</p>
-    <p>Recordar. Recordar a los demás.</p>
+    <p>Lavarme los dientes. Dar el paso. Mover el aire. Recordar. Recordar a los demás.</p>
     <br>
-    <p>Una flecha encorvada que sale de un agujero negro. Y frente al espejo: ¿me estrello? ¿o me quedo inmóvil?</p>
+    <p>Una flecha encorvada que sale de un agujero negro. Me estrello o me quedo inmóvil.</p>
     <br>
-    <p>Me duelen los 52 huesos de los pies. Si es que no me falta ninguno.</p>
-    <p>Tengo una vértebra menos. Otro diagnóstico tardío.</p>
+    <p>Me duelen los 52 huesos de los pies. Si es que no me falta ninguno. Tengo una vértebra menos. Otro diagnóstico tardío.</p>
     <br>
     <p>No voy a correr la cortina.</p>
     <br>
-    <p>Podría quitar las sillas y obtener más espacio. Estar sentada me distrae.</p>
-    <br>
+    <p>Podría quitar las sillas y obtener más espacio. Sentada me distraigo.</p>
     <p>¿Qué más puedo quitar?</p>
-    <br>
     <p>No es que no me gusten los objetos. Es que me aburren.</p>
-    <br>
-    <p>¿Hay culpa en eso?</p>
-    <br>
-    <p>En querer perder las cosas.</p>
+    <p>¿Hay culpa en eso? En querer perder las cosas.</p>
     <br>
     <p>Siento una culpable libertad cada vez que algo se rompe.</p>
     <p>Ultimamente tiro los platos en vez de lavarlos.</p>
