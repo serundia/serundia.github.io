@@ -1,3 +1,4 @@
+
 <style>
   html, body {
     background-color: #eae6df !important;
@@ -38,8 +39,9 @@
     text-align: center !important;
   }
 
+  /* CAJA MUCHO MÁS ANCHA (780px) PARA EVITAR EFECTO DE ESTROFA */
   .playa-contenido {
-    max-width: 440px !important; 
+    max-width: 780px !important; 
     margin: 0 auto !important;
     padding: 100px 24px 150px 24px !important;
     font-family: 'Courier New', Courier, monospace !important;
@@ -49,10 +51,11 @@
 
   .playa-contenido p {
     color: #2c3e50 !important; 
-    font-size: 17px !important;
+    font-size: 16px !important;
     margin-bottom: 24px !important;
   }
 
+  /* OPCIONES AL FINAL DE LA PROSA */
   .playa-opciones {
     margin-top: 120px !important;
     border-top: 1px solid #d1ccc0 !important;
@@ -75,6 +78,10 @@
   .playa-opciones a:hover {
     color: #ff3366 !important;
   }
+
+  @media (max-width: 768px) {
+    .playa-contenido { max-width: 100% !important; }
+  }
 </style>
 
 <div class="bunker-playa">
@@ -83,34 +90,15 @@
     <span class="titulo-azul">LA PLAYA</span>
   </div>
 
+  <!-- TU TEXTO EN FORMATO DE PÁRRAFO ANCHO Y EXTENDIDO -->
   <div class="playa-contenido">
     
-    <p>La sal deposita en mis tobillos.</p>
-    <p>Un plafón opaco, sucio, liso. Derrite las nubes.</p>
-    <p>La humedad caliente ocupa el aire. Aceitoso.</p>
-    <p>No veo las caras.</p>
-    <br>
-    <p>El bar de sombrillas rojas.</p>
-    <p>Mesas plásticas.</p>
-    <p>Y círculos pegajosos.</p>
-    <p>Nadie quiere nada pero todos nos sentamos con actitud.</p>
-    <br>
-    <p>Un sonido muy grueso me despega de la mesa.</p>
-    <p>Cuerpo y cloro.</p>
-    <p>Se nubló y todos esperan que vuelva a salir el sol.</p>
-    <p>Es un camión. Es una desproporción muy evidente.</p>
-    <!-- ESPACIO ELIMINADO AQUÍ -->
-    <p>Tengo la nariz seca por dentro y resbalosa por fuera. Todos los pliegues transpiran su especialidad. Todo calienta.</p>
-    <p>Coreografía de raquetas, abanicos y chapuzones.</p>
-    <p>Un hombre de brazos marrones y pantorrillas blancas contribuye.</p>
-    <p>Prestando ayuda al camionero y su maniobra irrespetuosa.</p>
-    <br>
+    <p>Un plafón opaco, sucio, liso derrite las nubes y las caras.</p>
+    <p>El bar. Con sombrillas rojas. Mesas plásticas. Y círculos pegajosos. Nadie quiere nada pero todos nos sentamos con actitud.</p>
+    <p>Un susto me despega de la mesa. Es una desproporción muy evidente. Tengo la nariz seca por dentro y resbalosa por fuera. Todos los pliegues transpiran su especialidad. Coreografía de raquetas, abanicos y chapuzones y un hombre de brazos marrones. Presta ayuda al camión con la maniobra. Irrespetuosa.</p>
     <p>Estoy quieta como un árbol que no puede meterse bajo su propia sombra.</p>
-    <br>
     <p>Los ventiladores revuelven.</p>
-    <br>
     <p>La actitud con la cual nos sentamos sigue manteniéndonos sentados.</p>
-    <br>
     <p>El agua si no es aceite es cerveza.</p>
     <br>
     <p>Calmamos la sed con cacahuetes salados.</p>
