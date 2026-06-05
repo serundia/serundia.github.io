@@ -19,24 +19,20 @@
     padding: 0 !important;
   }
 
-  /* Ampliado ligeramente el ancho para dar más margen a las líneas largas */
+  /* CAJA MUCHO MÁS ANCHA PARA QUE LAS FRASES RESPIREN ENTERAS */
   .bunker-contenido {
-    max-width: 460px !important; 
+    max-width: 680px !important; /* Pasamos de 460px a 680px para dar aire total */
     margin: 0 auto !important;
     padding: 140px 24px 150px 24px !important;
     font-family: 'Courier New', Courier, monospace !important;
     line-height: 2.3 !important;
     letter-spacing: 0.05em;
   }
+  
+  /* Ajuste sutil del tamaño a 16px para garantizar que todo quepa en una sola línea */
   .bunker-contenido p {
     color: #b3a7c4 !important; 
-    font-size: 17px !important;
-    margin-bottom: 24px !important;
-  }
-
-  /* BLINDAJE PARA EL BLOQUE FINAL: Evita cortes accidentales en cualquier pantalla */
-  .bloque-final p {
-    white-space: nowrap !important;
+    font-size: 16px !important;
     margin-bottom: 24px !important;
   }
 
@@ -71,8 +67,7 @@
 
   @media (max-width: 768px) {
     .luz-triangular { right: 20px !important; border-top-width: 50vh !important; }
-    /* En móviles permitimos el quiebre normal si la pantalla es extremadamente pequeña */
-    .bloque-final p { white-space: normal !important; } 
+    .bunker-contenido { max-width: 100% !important; }
   }
 </style>
 
@@ -101,12 +96,9 @@
     <br>
     <p>En querer perder las cosas.</p>
     <br>
-    <!-- TU BLOQUE PROTEGIDO LÍNEA POR LÍNEA -->
-    <div class="bloque-final">
-      <p>Siento una culpable libertad cada vez que algo se rompe.</p>
-      <p>Ultimamente tiro los platos en vez de lavarlos.</p>
-      <p>Tampoco me lavo mucho los dientes.</p>
-    </div>
+    <p>Siento una culpable libertad cada vez que algo se rompe.</p>
+    <p>Ultimamente tiro los platos en vez de lavarlos.</p>
+    <p>Tampoco me lavo mucho los dientes.</p>
   </div>
 
 </div>
