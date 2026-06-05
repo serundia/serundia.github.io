@@ -39,7 +39,7 @@
     text-align: center !important;
   }
 
-  /* CAJA MUCHO MÁS ANCHA (780px) PARA EVITAR EFECTO DE ESTROFA */
+  /* CAJA ANCHA Y CONFIGURACIÓN DE PROSA CORRIDA */
   .playa-contenido {
     max-width: 780px !important; 
     margin: 0 auto !important;
@@ -47,15 +47,16 @@
     font-family: 'Courier New', Courier, monospace !important;
     line-height: 2.3 !important;
     letter-spacing: 0.05em;
-  }
-
-  .playa-contenido p {
     color: #2c3e50 !important; 
     font-size: 16px !important;
-    margin-bottom: 24px !important;
   }
 
-  /* OPCIONES AL FINAL DE LA PROSA */
+  /* ELIMINAMOS MÁRGENES DE PÁRRAFO PARA EVITAR SEPARACIONES TRADICIONALES */
+  .prosa-continua {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
   .playa-opciones {
     margin-top: 120px !important;
     border-top: 1px solid #d1ccc0 !important;
@@ -63,7 +64,6 @@
     font-family: 'Courier New', Courier, monospace !important;
     font-size: 16px !important;
     letter-spacing: 0.05em;
-    color: #2c3e50 !important;
     display: flex !important;
     gap: 40px !important;
   }
@@ -90,18 +90,14 @@
     <span class="titulo-azul">LA PLAYA</span>
   </div>
 
-  <!-- TU TEXTO EN FORMATO DE PÁRRAFO ANCHO Y EXTENDIDO -->
+  <!-- CONTENEDOR BLOQUE ÚNICO, SIN PÁRRAFOS NI ESPACIOS EN BLANCO INTERNOS -->
   <div class="playa-contenido">
     
-    <p>Un plafón opaco, sucio, liso derrite las nubes y las caras.</p>
-    <p>El bar. Con sombrillas rojas. Mesas plásticas. Y círculos pegajosos. Nadie quiere nada pero todos nos sentamos con actitud.</p>
-    <p>Un susto me despega de la mesa. Es una desproporción muy evidente. Tengo la nariz seca por dentro y resbalosa por fuera. Todos los pliegues transpiran su especialidad. Coreografía de raquetas, abanicos y chapuzones y un hombre de brazos marrones. Presta ayuda al camión con la maniobra. Irrespetuosa.</p>
-    <p>Estoy quieta como un árbol que no puede meterse bajo su propia sombra.</p>
-    <p>Los ventiladores revuelven.</p>
-    <p>La actitud con la cual nos sentamos sigue manteniéndonos sentados.</p>
-    <p>El agua si no es aceite es cerveza.</p>
-    <br>
-    <p>Calmamos la sed con cacahuetes salados.</p>
+    <div class="prosa-continua">
+      Un plafón opaco, sucio, liso derrite las nubes y las caras.<br>
+      El bar. Con sombrillas rojas. Mesas plásticas. Y círculos pegajosos. Nadie quiere nada pero todos nos sentamos con actitud.<br>
+      Un susto me despega de la mesa. Es una desproporción muy evidente. Tengo la nariz seca por dentro y resbalosa por fuera. Todos los pliegues transpiran su especialidad. Raquetas, abanicos y chapuzones y un hombre de brazos marrones. Presta ayuda al camión con la maniobra. Irrespetuoso. Yo quieta como un árbol que no puede meterse bajo su propia sombra. Los ventiladores revuelven. La actitud con la cual nos sentamos sigue manteniéndonos sentados. El agua si no es aceite es cerveza. Calmamos la sed con cacahuetes salados.
+    </div>
 
     <div class="playa-opciones">
       <a href="el-gato-naranja.html">quiero</a>
