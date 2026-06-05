@@ -39,7 +39,6 @@
     text-align: center !important;
   }
 
-  /* CAJA ANCHA Y CONFIGURACIÓN DE PROSA CORRIDA */
   .playa-contenido {
     max-width: 780px !important; 
     margin: 0 auto !important;
@@ -51,7 +50,6 @@
     font-size: 16px !important;
   }
 
-  /* ELIMINAMOS MÁRGENES DE PÁRRAFO PARA EVITAR SEPARACIONES TRADICIONALES */
   .prosa-continua {
     margin: 0 !important;
     padding: 0 !important;
@@ -90,13 +88,13 @@
     <span class="titulo-azul">LA PLAYA</span>
   </div>
 
-  <!-- CONTENEDOR BLOQUE ÚNICO, SIN PÁRRAFOS NI ESPACIOS EN BLANCO INTERNOS -->
+  <!-- TU TEXTO FINAL EN BLOQUE CONTINUO SIN ESPACIOS -->
   <div class="playa-contenido">
     
     <div class="prosa-continua">
-      Un plafón opaco, sucio, liso derrite las nubes y las caras.<br>
+      Un plafón opaco, sucio, liso, derrite las nubes y las caras.<br>
       El bar. Con sombrillas rojas. Mesas plásticas. Y círculos pegajosos. Nadie quiere nada pero todos nos sentamos con actitud.<br>
-      Un susto me despega de la mesa. Es una desproporción muy evidente. Tengo la nariz seca por dentro y resbalosa por fuera. Todos los pliegues transpiran su especialidad. Raquetas, abanicos y chapuzones y un hombre de brazos marrones. Presta ayuda al camión con la maniobra. Irrespetuoso. Yo quieta como un árbol que no puede meterse bajo su propia sombra. Los ventiladores revuelven. La actitud con la cual nos sentamos sigue manteniéndonos sentados. El agua si no es aceite es cerveza. Calmamos la sed con cacahuetes salados.
+      Un susto me despega de la mesa. Es una desproporción muy evidente. Tengo la nariz seca por dentro y resbalosa por fuera. Todos los pliegues transpiran su especialidad. Raquetas, abanicos y chapuzones. Un hombre de brazos marrones que presta ayuda al camión con la maniobra. Yo quieta como un árbol que no puede meterse bajo su propia sombra. Los ventiladores revuelven. La actitud con la cual nos sentamos sigue manteniéndonos sentados. El agua si no es aceite es cerveza. Calmamos la sed con cacahuetes salados.
     </div>
 
     <div class="playa-opciones">
