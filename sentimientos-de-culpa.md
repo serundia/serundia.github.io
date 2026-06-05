@@ -20,7 +20,6 @@
     padding: 0 !important;
   }
 
-  /* LA PROSA INTRODUCTORIA MORADA */
   .bunker-contenido {
     max-width: 440px !important; 
     margin: 0 auto !important;
@@ -32,39 +31,26 @@
   .bunker-contenido p {
     color: #b3a7c4 !important; 
     font-size: 17px !important;
+    margin-bottom: 24px !important;
   }
 
-  /* NUEVA LUZ: TRIÁNGULO FINO, SUSPENDIDO EN LOS 2/3 SUPERIORES */
+  /* AGUJA BLANCA HACIA LA PLAYA */
   .luz-triangular {
     display: block !important;
     position: fixed !important;
-    
-    /* Posicionamiento: no toca el techo y se suspende a la derecha */
-    top: 8vh !important;       /* Margen superior para que NO toque el techo */
-    right: 50px !important;    /* Despegado del borde derecho */
-    
-    /* Dimensiones: ocupa aproximadamente los dos tercios superiores */
+    top: 8vh !important;       
+    right: 50px !important;    
     width: 0 !important;
     height: 0 !important;
-    
-    /* Construcción geométrica del triángulo hacia abajo (ancho arriba, punta abajo) */
-    border-left: 5px solid transparent !important;  /* Lado izquierdo invisible */
-    border-right: 5px solid transparent !important; /* Lado derecho invisible */
-    border-top: 55vh solid #ffffff !important;      /* El cuerpo del triángulo en blanco, cayendo en vertical */
-    
-    /* Efecto de fulgor blanco sutil en los bordes */
-    filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.8)) !important;
-    
-    /* Comportamiento e interactividad */
+    border-left: 5px solid transparent !important;
+    border-right: 5px solid transparent !important;
+    border-top: 55vh solid #ffffff !important;      
+    filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.6)) !important;
     cursor: pointer !important;
     z-index: 1000000 !important;
     opacity: 0.7;
-    transition: opacity 0.3s, filter 0.3s !important;
-  }
-
-  /* Animación orgánica de parpadeo suave, sin sacudidas */
-  .luz-triangular {
     animation: pulsacion-sutil 3s infinite alternate !important;
+    transition: opacity 0.3s, filter 0.3s !important;
   }
 
   .luz-triangular:hover {
@@ -73,8 +59,8 @@
   }
 
   @keyframes pulsacion-sutil {
-    0%, 100% { opacity: 0.6; }
-    50% { opacity: 0.85; }
+    0%, 100% { opacity: 0.5; }
+    50% { opacity: 0.8; }
   }
 
   @media (max-width: 768px) {
@@ -84,33 +70,31 @@
 
 <div class="bunker-literario">
   
-  <!-- LA NUEVA AGUJA DE LUZ TRIANGULAR HACIA ABAJO (ENLACE A LA PLAYA) -->
   <a href="la-playa.html" class="luz-triangular" title="Seguir la luz (La Playa)"></a>
 
-  <!-- PROSA SIN TÍTULO NI SEMÁFOROS -->
   <div class="bunker-contenido">
-    <p>Lavarme los dientes. Dar el paso. Mover el aire. Recordar. Recordar a los demás. Una flecha encorvada que sale del agujero negro. Y frente al espejo: ¿me estrello o me quedo inmóvil?</p>
-    <br><br>
-    <p>Me duelen los 52 huesos de los pies. Si es que no me falta ninguno. En el cuello: falta la segunda vértebra. Otro diagnóstico tardío.</p>
-    <br><br>
-    <p>Estoy cambiando la piel y duele.</p>
-    <br><br>
-    <p>No quiero abrir las cortinas. Prefiero seguir respirando mis propios desechos.</p>
-    <br><br>
+    <p>Lavarme los dientes. Dar el paso. Mover el aire.</p>
+    <p>Recordar. Recordar a los demás.</p>
+    <br>
+    <p>Una flecha encorvada que sale de un agujero negro. Y frente al espejo: ¿me estrello? ¿o me quedo inmóvil?</p>
+    <br>
+    <p>Me duelen los 52 huesos de los pies. Si es que no me falta ninguno.</p>
+    <p>Tengo una vértebra menos. Otro diagnóstico tardío.</p>
+    <br>
+    <p>No voy a correr la cortina.</p>
+    <br>
     <p>Podría quitar las sillas y obtener más espacio. Estar sentada me distrae.</p>
-    <br><br>
+    <br>
     <p>¿Qué más puedo quitar?</p>
-    <br><br>
-    <p>No es que no me gusten los objetos. Es que me aburren.</p>
-    <br><br>
+    <br>
+    <p>No es que no me gustan los objetos. Es que me aburren.</p>
+    <br>
     <p>¿Hay culpa en eso?</p>
-    <br><br>
+    <br>
     <p>En querer perder las cosas.</p>
-    <br><br>
+    <br>
     <p>Siento una culpable libertad cada vez que algo se rompe.</p>
-    <br><br>
-    <p>Últimamente tiro los platos en vez de lavarlos.</p>
-    <br><br>
+    <p>Ultimamente tiro los platos en vez de lavarlos.</p>
     <p>Tampoco me lavo mucho los dientes.</p>
   </div>
 
