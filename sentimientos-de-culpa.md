@@ -19,8 +19,9 @@
     padding: 0 !important;
   }
 
+  /* Ampliado ligeramente el ancho para dar más margen a las líneas largas */
   .bunker-contenido {
-    max-width: 440px !important; 
+    max-width: 460px !important; 
     margin: 0 auto !important;
     padding: 140px 24px 150px 24px !important;
     font-family: 'Courier New', Courier, monospace !important;
@@ -30,6 +31,12 @@
   .bunker-contenido p {
     color: #b3a7c4 !important; 
     font-size: 17px !important;
+    margin-bottom: 24px !important;
+  }
+
+  /* BLINDAJE PARA EL BLOQUE FINAL: Evita cortes accidentales en cualquier pantalla */
+  .bloque-final p {
+    white-space: nowrap !important;
     margin-bottom: 24px !important;
   }
 
@@ -64,6 +71,8 @@
 
   @media (max-width: 768px) {
     .luz-triangular { right: 20px !important; border-top-width: 50vh !important; }
+    /* En móviles permitimos el quiebre normal si la pantalla es extremadamente pequeña */
+    .bloque-final p { white-space: normal !important; } 
   }
 </style>
 
@@ -86,16 +95,18 @@
     <br>
     <p>¿Qué más puedo quitar?</p>
     <br>
-    <!-- CORRECCIÓN REALIZADA AQUÍ: "gusten" -->
     <p>No es que no me gusten los objetos. Es que me aburren.</p>
     <br>
     <p>¿Hay culpa en eso?</p>
     <br>
     <p>En querer perder las cosas.</p>
     <br>
-    <p>Siento una culpable libertad cada vez que algo se rompe.</p>
-    <p>Ultimamente tiro los platos en vez de lavarlos.</p>
-    <p>Tampoco me lavo mucho los dientes.</p>
+    <!-- TU BLOQUE PROTEGIDO LÍNEA POR LÍNEA -->
+    <div class="bloque-final">
+      <p>Siento una culpable libertad cada vez que algo se rompe.</p>
+      <p>Ultimamente tiro los platos en vez de lavarlos.</p>
+      <p>Tampoco me lavo mucho los dientes.</p>
+    </div>
   </div>
 
 </div>
