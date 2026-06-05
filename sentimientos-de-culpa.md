@@ -1,4 +1,3 @@
-
 <style>
   html, body {
     background-color: #0d0d0d !important;
@@ -87,7 +86,8 @@
     <br>
     <p>¿Qué más puedo quitar?</p>
     <br>
-    <p>No es que no me gustan los objetos. Es que me aburren.</p>
+    <!-- CORRECCIÓN REALIZADA AQUÍ: "gusten" -->
+    <p>No es que no me gusten los objetos. Es que me aburren.</p>
     <br>
     <p>¿Hay culpa en eso?</p>
     <br>
