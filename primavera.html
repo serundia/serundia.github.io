@@ -1,7 +1,8 @@
 
+
 <style>
   html, body {
-    background-color: #2e5a44 !important; /* Un verde hoja limpio, profundo y vivo */
+    background-color: #fbd46d !important; /* Fondo Amarillo Polen absoluto y brillante */
     margin: 0 !important;
     padding: 0 !important;
     width: 100% !important;
@@ -13,7 +14,7 @@
     left: 0 !important;
     width: 100% !important;
     height: 100% !important;
-    background-color: #2e5a44 !important;
+    background-color: #fbd46d !important;
     z-index: 999999 !important;
     overflow-y: auto !important;
     box-sizing: border-box !important;
@@ -22,43 +23,47 @@
 
   .contenedor-titulo-primavera {
     width: 100% !important;
-    height: 100vh !important;
-    display: flex !important;
-    justify-content: center !important;
-    align-items: center !important;
-    background-color: #2e5a44 !important;
+    background-color: #fbd46d !important;
+    padding-top: 100px !important; /* Distancia desde el techo de la pantalla */
   }
 
+  /* EL TÍTULO SE ESTIRA EN TODO EL ANCHO, IZQUIERDA Y PEGADO AL TEXTO */
   .titulo-verde {
-    color: #fbd46d !important; /* Amarillo polen limpio */
+    color: #2e5a44 !important; /* Verde hoja limpio */
     font-family: 'Courier New', Courier, monospace !important;
     font-weight: bold !important;
     text-transform: uppercase !important;
-    font-size: 19px !important;
-    letter-spacing: 0.15em !important;
-    text-align: center;
+    font-size: 22px !important;
+    letter-spacing: 4.25rem !important; /* Estira las letras para ocupar el ancho del bloque */
+    text-align: left !important;
+    display: block !important;
+    max-width: 780px !important;
+    margin: 0 auto 20px auto !important; /* Solo 20px de separación con la prosa */
+    padding-left: 24px !important;
+    box-sizing: border-box !important;
+    white-space: nowrap !important;
   }
 
-  /* CAJA ANCHA (780px) PARA PROSA REAL Y CORRIDA */
+  /* CAJA ANCHA PARA LA PROSA */
   .primavera-contenido {
     max-width: 780px !important; 
     margin: 0 auto !important;
-    padding: 100px 24px 150px 24px !important;
+    padding: 0 24px 150px 24px !important;
     font-family: 'Courier New', Courier, monospace !important;
     line-height: 2.3 !important;
     letter-spacing: 0.05em;
   }
 
-  /* LETRAS EN AMARILLO POLEN SOBRE EL VERDE HOJA */
+  /* LETRA MÁS GRANDE EN VERDE HOJA */
   .primavera-contenido p {
-    color: #fbd46d !important; /* Amarillo polen limpio */
-    font-size: 16px !important;
-    margin-bottom: 40px !important; /* Tus 5 bloques con su espacio limpio */
+    color: #2e5a44 !important; /* Verde hoja limpio */
+    font-size: 18px !important; /* Letra con más cuerpo */
+    margin-bottom: 40px !important;
   }
 
   .primavera-volver {
     margin-top: 120px !important;
-    border-top: 1px solid #417359 !important; /* Línea sutil dentro de la gama verde */
+    border-top: 1px solid #dcb550 !important; /* Línea sutil en la gama del amarillo */
     padding-top: 30px !important;
     font-family: 'Courier New', Courier, monospace !important;
     font-size: 14px !important;
@@ -66,39 +71,36 @@
   }
 
   .primavera-volver a, .primavera-volver a:visited {
-    color: #fbd46d !important;
+    color: #2e5a44 !important;
     text-decoration: none !important;
     font-weight: bold !important;
-    opacity: 0.8;
   }
   
   .primavera-volver a:hover {
-    opacity: 1 !important;
-    text-shadow: 0 0 8px #fbd46d !important; /* El botón brilla un poco al pasar el cursor */
+    text-shadow: 0 0 5px rgba(46, 90, 68, 0.4) !important;
   }
 
   @media (max-width: 768px) {
     .primavera-contenido { max-width: 100% !important; }
+    .titulo-verde { letter-spacing: 1.2rem !important; font-size: 16px !important; } /* Ajuste elástico para móviles */
   }
 </style>
 
 <div class="bunker-primavera">
 
-  <!-- ENTRADA A LA HABITACIÓN -->
+  <!-- EL TÍTULO CAMINA SOBRE TU PROSA -->
   <div class="contenedor-titulo-primavera">
     <span class="titulo-verde">PRIMAVERA</span>
   </div>
 
-  <!-- TU TEXTO EN SUS 5 BLOQUES LIMPIOS -->
+  <!-- TU NUEVO TEXTO DEFINITIVO -->
   <div class="primavera-contenido">
     
-    <p>Prefiero estar con las chicharras sordas de mis orejas. Ese helicóptero nunca se acerca. Los colores se están metalizando. Pasos de perro, de gomas, de mariquitas reproduciéndose. No distingo y pica por dentro. Mis células muertas se acumulan amarillentas. Tengo mocos dorados.</p>
+    <p>Prefiero estar con las chicharras sordas de mis orejas. Pasos de perro, de gomas, de mariquitas reproduciéndose. Mis células muertas se acumulan amarillentas. No distingo y pica por dentro. Tengo mocos dorados.</p>
     
     <p>Mi mamá se pasaba la lengua por las manos.</p>
     
-    <p>¿Qué puedo comer? Los tomates son fruta. La acidez pone en peligro el esmalte. Algo malo tiene que tener. Como los maridos.</p>
-    
-    <p>¿Hay algo que no le haga mal a nada?</p>
+    <p>¿Siento hambre? Los tomates son fruta. La acidez pone en peligro el esmalte. Algo malo tiene que tener. ¿Como los maridos?</p>
     
     <p>No se acaba aquí. Me arde el estómago.</p>
 
