@@ -1,0 +1,105 @@
+<style>
+  html, body {
+    background-color: #f4f1ea !important; /* Un fondo polen pálido, polvoriento */
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+  }
+  .bunker-primavera {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    background-color: #f4f1ea !important;
+    z-index: 999999 !important;
+    overflow-y: auto !important;
+    box-sizing: border-box !important;
+    padding: 0 !important;
+  }
+
+  .contenedor-titulo-primavera {
+    width: 100% !important;
+    height: 100vh !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    background-color: #f4f1ea !important;
+  }
+
+  .titulo-verde {
+    color: #576574 !important; /* Gris metalizado sutil */
+    font-family: 'Courier New', Courier, monospace !important;
+    font-weight: normal !important;
+    text-transform: uppercase !important;
+    font-size: 19px !important;
+    letter-spacing: 0.15em !important;
+    text-align: center !important;
+  }
+
+  /* CAJA ANCHA (780px) PARA EVITAR EFECTO DE ESTROFA */
+  .primavera-contenido {
+    max-width: 780px !important; 
+    margin: 0 auto !important;
+    padding: 100px 24px 150px 24px !important;
+    font-family: 'Courier New', Courier, monospace !important;
+    line-height: 2.3 !important;
+    letter-spacing: 0.05em;
+  }
+
+  .primavera-contenido p {
+    color: #2c3e50 !important; /* Gris oscuro nítido */
+    font-size: 16px !important;
+    margin-bottom: 35px !important; /* Espacio cómodo entre tus bloques */
+  }
+
+  .primavera-volver {
+    margin-top: 120px !important;
+    border-top: 1px solid #d1ccc0 !important;
+    padding-top: 30px !important;
+    font-family: 'Courier New', Courier, monospace !important;
+    font-size: 16px !important;
+    letter-spacing: 0.05em;
+  }
+
+  .primavera-volver a, .primavera-volver a:visited {
+    color: #576574 !important;
+    text-decoration: none !important;
+    font-weight: bold !important;
+  }
+  
+  .primavera-volver a:hover {
+    color: #ff9f43 !important; /* Un destello naranja polen al pasar el mouse */
+  }
+
+  @media (max-width: 768px) {
+    .primavera-contenido { max-width: 100% !important; }
+  }
+</style>
+
+<div class="bunker-primavera">
+
+  <!-- TÍTULO DE ENTRADA -->
+  <div class="contenedor-titulo-primavera">
+    <span class="titulo-verde">PRIMAVERA</span>
+  </div>
+
+  <!-- TU TEXTO EN PROSA ANCHA SEGÚN TU ESTRUCTURA -->
+  <div class="primavera-contenido">
+    
+    <p>Prefiero estar con las ventanas cerradas y las chicharras sordas de mis orejas. Ese helicóptero nunca está cerca. La luz metalizada entra como agujas en los ojos. Pasos de perro, de gomas, de mariquitas reproduciéndose. No distingo con tanto ruido. Me pica por dentro. Mis células muertas se acumulan amarillentas. Tengo mocos dorados. Mi mamá se pasaba la lengua por las manos. Sería para hidratarse.</p>
+    
+    <p>¿Qué puedo comer? Los tomates son fruta. La acidez pone en peligro el esmalte. Algo malo tiene que tener. Como mi marido.</p>
+    
+    <p>¿Hay algo que no le haga mal a nada?</p>
+    
+    <p>No se acaba aquí. Me arde el estómago.</p>
+
+    <!-- ENLACE DE RETORNO PROVISIONAL -->
+    <div class="primavera-volver">
+      <a href="sentimientos-de-culpa.html">[ volver al búnker ]</a>
+    </div>
+
+  </div>
+</div>
