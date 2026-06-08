@@ -1,74 +1,25 @@
-<style>
-  html, body {
-    background-color: #0d0d0d !important;
-    margin: 0 !important;
-    padding: 0 !important;
-    width: 100% !important;
-    height: 100% !important;
-  }
-  .bunker-gato {
-    position: fixed !important;
-    top: 0 !important;
-    left: 0 !important;
-    width: 100% !important;
-    height: 100% !important;
-    background-color: #0d0d0d !important;
-    z-index: 999999 !important;
-    overflow-y: auto !important;
-    box-sizing: border-box !important;
-    padding: 0 !important;
-  }
 
-  .gato-contenido {
-    max-width: 680px !important; 
-    margin: 0 auto !important;
-    padding: 140px 24px 150px 24px !important;
-    font-family: 'Courier New', Courier, monospace !important;
-    line-height: 2.3 !important;
-    letter-spacing: 0.05em;
-  }
 
-  .gato-contenido p {
-    color: #ff7675 !important; /* Tu fucsia/coral gastado original */
-    font-size: 16px !important;
-    margin-bottom: 0 !important;
-  }
+<style> /* LA NOCHE LUMINOSA */ html, body { background-color: #060a14 !important; margin: 0 !important; padding: 0 !important; width: 100% !important; height: 100% !important; } .bunker-recuerdo { position: fixed !important; top: 0 !important; left: 0 !important; width: 100% !important; height: 100% !important; background-color: #060a14 !important; z-index: 999999 !important; overflow-y: auto !important; box-sizing: border-box !important; padding: 0 !important; } .contenedor-cartel-gato { width: 100% !important; height: 100vh !important; display: flex !important; justify-content: center !important; align-items: center !important; box-sizing: border-box; } .cartel-gato { color: #ff6633 !important; font-family: 'Courier New', Courier, monospace !important; font-weight: bold !important; text-transform: uppercase !important; font-size: 28px !important; letter-spacing: 0.3em !important; text-align: center !important; filter: blur(0.3px) !important; text-shadow: 0 0 15px rgba(255, 255, 255, 0.7), 0 0 35px #ff6633 !important; user-select: none !important; } .recuerdo-contenido { max-width: 440px !important; margin: 0 auto !important; padding: 100px 24px 180px 24px !important; font-family: 'Courier New', Courier, monospace !important; line-height: 2.3 !important; letter-spacing: 0.05em; } .recuerdo-contenido p { color: #ffcc00 !important; font-size: 17px !important; margin-bottom: 24px !important; text-shadow: 0 0 1px rgba(255, 204, 0, 0.3) !important; } 
 
-  /* EL ESPACIO EN BLANCO PARA DEJAR "ME QUEDO SIN TEXTO" EN EL MEDIO */
-  .linea-aislada {
-    margin-top: 100px !important;    /* Distancia generosa por arriba */
-    margin-bottom: 100px !important; /* Distancia generosa por abajo */
-    text-align: center !important;   /* Centrado para romper la línea de lectura */
-  }
+/* NUEVA SECCIÓN DE CONTROL PARA VOLVER "ME QUEDO SIN TEXTO" UN ABISMO */
+.recuerdo-contenido p.frase-vacia {
+  margin-top: 120px !important;    /* Distancia dramática arriba */
+  margin-bottom: 120px !important; /* Distancia dramática abajo */
+  text-align: center !important;   /* Centrado en medio de la pantalla */
+  display: block !important;
+}
 
-  .recuerdo-volver {
-    margin-top: 120px !important;
-    border-top: 1px solid #333 !important;
-    padding-top: 30px !important;
-    display: flex !important;
-    justify-content: space-between !important;
-    font-family: 'Courier New', Courier, monospace !important;
-    font-size: 14px !important;
-    letter-spacing: 0.1em;
-  }
+/* CONTENEDOR AJUSTADO PARA PONER LAS DOS OPCIONES EN LÍNEA */ .recuerdo-volver { margin-top: 140px !important; text-align: left !important; display: flex !important; gap: 30px !important; /* Separación sutil entre salir y seguir */ } .recuerdo-volver a, .recuerdo-volver a:visited { color: #ff0055 !important; /* Fucsia Serundia exacto */ font-family: 'Courier New', Courier, monospace !important; font-size: 14px !important; text-decoration: none !important; letter-spacing: 0.1em; opacity: 0.6; transition: opacity 0.3s, text-shadow 0.3s; } .recuerdo-volver a:hover { opacity: 1 !important; text-shadow: 0 0 8px #ff0055, 0 0 15px rgba(255, 0, 85, 0.5) !important; } </style>
 
-  .recuerdo-volver a, .recuerdo-volver a:visited {
-    color: #ff7675 !important;
-    text-decoration: none !important;
-    font-weight: bold !important;
-  }
-  
-  .recuerdo-volver a:hover {
-    color: #ffffff !important;
-  }
+<div class="bunker-recuerdo">
 
-  @media (max-width: 768px) {
-    .gato-contenido { max-width: 100% !important; }
-  }
-</style>
+  <!-- EL CARTEL DE ENTRADA -->
+  <div class="contenedor-cartel-gato">
+    <span class="cartel-gato">EL GATO NARANJA</span>
+  </div>
 
-<div class="bunker-gato">
-  <div class="gato-contenido">
+  <div class="recuerdo-contenido">
 
     <!-- PRIMER BLOQUE -->
     <p>
@@ -83,7 +34,7 @@
       No lloraba por eso.
     </p>
 
-    <br><br>
+    <br>
 
     <!-- SEGUNDO BLOQUE -->
     <p>
@@ -91,8 +42,8 @@
       Que en cambio volvió.
     </p>
 
-    <!-- LA FRASE AISLADA EN MEDIO DEL ABISMO -->
-    <p class="linea-aislada">Me quedo sin texto.</p>
+    <!-- LA FRASE EN EL MEDIO Y CON DISTANCIA REFORZADA -->
+    <p class="frase-vacia">Me quedo sin texto.</p>
 
     <!-- TERCER BLOQUE -->
     <p>
@@ -103,7 +54,7 @@
       Mi hermana y yo.
     </p>
 
-    <br><br>
+    <br>
 
     <!-- CUARTO BLOQUE -->
     <p>
@@ -113,11 +64,11 @@
       Justo a las 12.
     </p>
 
-    <!-- LAS DOS OPCIONES DE SALIDA -->
+    <!-- LAS DOS OPCIONES ALINEADAS -->
     <div class="recuerdo-volver">
       <a href="index.html">[ salir ]</a>
       <a href="primavera.html">[ seguir ]</a>
     </div>
 
   </div>
-</div>
+</div
