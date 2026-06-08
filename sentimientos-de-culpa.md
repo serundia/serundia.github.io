@@ -1,3 +1,4 @@
+
 <style>
   html, body {
     background-color: #0d0d0d !important;
@@ -19,7 +20,6 @@
     padding: 0 !important;
   }
 
-  /* Ancho expandido para que tus nuevas agrupaciones respiren en horizontal */
   .bunker-contenido {
     max-width: 680px !important; 
     margin: 0 auto !important;
@@ -28,7 +28,18 @@
     line-height: 2.3 !important;
     letter-spacing: 0.05em;
   }
-  
+
+  /* EL TITULO MORADO, CENTRADO Y PEGADO AL TEXTO */
+  .titulo-morado {
+    color: #b3a7c4 !important; /* Mismo tono morado exacto que tus textos */
+    font-size: 19px !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.15em !important;
+    text-align: center !important;
+    display: block !important;
+    margin-bottom: 40px !important; /* Distancia mínima y limpia antes de que empiece la prosa */
+  }
+
   .bunker-contenido p {
     color: #b3a7c4 !important; 
     font-size: 16px !important;
@@ -74,8 +85,11 @@
   
   <a href="la-playa.html" class="luz-triangular" title="Seguir la luz (La Playa)"></a>
 
-  <!-- TU ÚLTIMA ESTRUCTURA EXACTA -->
   <div class="bunker-contenido">
+    
+    <!-- TU NUEVO TITULO INTEGRADO -->
+    <span class="titulo-morado">CULPA</span>
+
     <p>Lavarme los dientes. Dar el paso. Mover el aire. Recordar. Recordar a los demás.</p>
     <br>
     <p>Una flecha encorvada que sale de un agujero negro. Me estrello o me quedo inmóvil.</p>
