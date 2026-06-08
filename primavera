@@ -1,6 +1,6 @@
 <style>
   html, body {
-    background-color: #f4f1ea !important; /* Un fondo polen pálido, polvoriento */
+    background-color: #f4f1ea !important;
     margin: 0 !important;
     padding: 0 !important;
     width: 100% !important;
@@ -29,7 +29,7 @@
   }
 
   .titulo-verde {
-    color: #576574 !important; /* Gris metalizado sutil */
+    color: #576574 !important;
     font-family: 'Courier New', Courier, monospace !important;
     font-weight: normal !important;
     text-transform: uppercase !important;
@@ -38,7 +38,6 @@
     text-align: center !important;
   }
 
-  /* CAJA ANCHA (780px) PARA EVITAR EFECTO DE ESTROFA */
   .primavera-contenido {
     max-width: 780px !important; 
     margin: 0 auto !important;
@@ -49,9 +48,9 @@
   }
 
   .primavera-contenido p {
-    color: #2c3e50 !important; /* Gris oscuro nítido */
+    color: #2c3e50 !important;
     font-size: 16px !important;
-    margin-bottom: 35px !important; /* Espacio cómodo entre tus bloques */
+    margin-bottom: 35px !important;
   }
 
   .primavera-volver {
@@ -59,8 +58,8 @@
     border-top: 1px solid #d1ccc0 !important;
     padding-top: 30px !important;
     font-family: 'Courier New', Courier, monospace !important;
-    font-size: 16px !important;
-    letter-spacing: 0.05em;
+    font-size: 14px !important;
+    letter-spacing: 0.1em;
   }
 
   .primavera-volver a, .primavera-volver a:visited {
@@ -70,7 +69,7 @@
   }
   
   .primavera-volver a:hover {
-    color: #ff9f43 !important; /* Un destello naranja polen al pasar el mouse */
+    color: #ff9f43 !important;
   }
 
   @media (max-width: 768px) {
@@ -80,15 +79,13 @@
 
 <div class="bunker-primavera">
 
-  <!-- TÍTULO DE ENTRADA -->
   <div class="contenedor-titulo-primavera">
     <span class="titulo-verde">PRIMAVERA</span>
   </div>
 
-  <!-- TU TEXTO EN PROSA ANCHA SEGÚN TU ESTRUCTURA -->
   <div class="primavera-contenido">
     
-    <p>Prefiero estar con las ventanas cerradas y las chicharras sordas de mis orejas. Ese helicóptero nunca está cerca. La luz metalizada entra como agujas en los ojos. Pasos de perro, de gomas, de mariquitas reproduciéndose. No distingo con tanto ruido. Me pica por dentro. Mis células muertas se acumulan amarillentas. Tengo mocos dorados. Mi mamá se pasaba la lengua por las manos. Sería para hidratarse.</p>
+    <p>Prefiero estar con las ventanas cerradas y las chicharras sordas de mis orejas. Ese helicóptero nunca está cerca. La luz metalizada entra como agujas in los ojos. Pasos de perro, de gomas, de mariquitas reproduciéndose. No distingo con tanto ruido. Me pica por dentro. Mis células muertas se acumulan amarillentas. Tengo mocos dorados. Mi mamá se pasaba la lengua por las manos. Sería para hidratarse.</p>
     
     <p>¿Qué puedo comer? Los tomates son fruta. La acidez pone en peligro el esmalte. Algo malo tiene que tener. Como mi marido.</p>
     
@@ -96,9 +93,9 @@
     
     <p>No se acaba aquí. Me arde el estómago.</p>
 
-    <!-- ENLACE DE RETORNO PROVISIONAL -->
+    <!-- RETORNO COHERENTE AL INICIO DE SERUNDIA -->
     <div class="primavera-volver">
-      <a href="sentimientos-de-culpa.html">[ volver al búnker ]</a>
+      <a href="index.html">[ volver ]</a>
     </div>
 
   </div>
