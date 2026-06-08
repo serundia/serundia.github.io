@@ -1,3 +1,4 @@
+
 <style>
   html, body {
     background-color: #0d0d0d !important;
@@ -44,46 +45,37 @@
     margin-bottom: 24px !important;
   }
 
-  /* LA CORTINA: LÍNEA VERTICAL ANCHA Y PARPADEANTE */
+  /* LA CORTINA: LÍNEA ANCHA, SUSPENDIDA (SIN TOCAR BORDES) Y DE LUZ FIJA */
   .cortina-luz {
     display: block !important;
     position: fixed !important;
-    top: 0 !important;
-    bottom: 0 !important;
-    right: 80px !important; /* Separada elegantemente a la derecha */
-    width: 12px !important;  /* Línea notablemente más ancha */
+    top: 15vh !important;       /* Deja un margen generoso arriba */
+    height: 70vh !important;    /* Altura fija, queda suspendida en el aire */
+    right: 80px !important;     /* Separada elegantemente a la derecha */
+    width: 14px !important;     /* Línea ancha y nítida */
     background-color: #ffffff !important;
     box-shadow: 0 0 15px rgba(255, 255, 255, 0.8), 0 0 30px rgba(255, 255, 255, 0.4) !important;
     cursor: pointer !important;
     z-index: 1000000 !important;
-    animation: parpadeo-cortina 4s infinite ease-in-out !important; /* Simula el movimiento del viento */
-    transition: opacity 0.3s, width 0.3s !important;
+    opacity: 0.85;              /* Luz fija, limpia y constante */
+    transition: opacity 0.3s, width 0.3s, box-shadow 0.3s !important;
   }
 
   .cortina-luz:hover {
-    width: 16px !important; /* Se ensancha sutilmente al pasar el cursor */
-    box-shadow: 0 0 25px rgba(255, 255, 255, 1), 0 0 40px rgba(255, 255, 255, 0.6) !important;
-  }
-
-  /* ANIMACIÓN ASIMÉTRICA DE PARPADEO (EFECTO TELA) */
-  @keyframes parpadeo-cortina {
-    0%, 100% { opacity: 0.3; }
-    15% { opacity: 0.75; }
-    30% { opacity: 0.4; }
-    45% { opacity: 0.85; }
-    60% { opacity: 0.35; }
-    80% { opacity: 0.9; }
+    opacity: 1 !important;
+    width: 18px !important;     /* Se ensancha un poco al posarse sobre ella */
+    box-shadow: 0 0 25px rgba(255, 255, 255, 1), 0 0 45px rgba(255, 255, 255, 0.7) !important;
   }
 
   @media (max-width: 768px) {
-    .cortina-luz { right: 15px !important; width: 8px !important; }
+    .cortina-luz { right: 15px !important; width: 8px !important; top: 20vh !important; height: 60vh !important; }
     .bunker-contenido { max-width: 100% !important; }
   }
 </style>
 
 <div class="bunker-literario">
   
-  <!-- LA CORTINA QUE TE LLEVA A LA PLAYA -->
+  <!-- LA CORTINA SUSPENDIDA QUE TE LLEVA A LA PLAYA -->
   <a href="la-playa.html" class="cortina-luz" title="Cruzar la cortina (La Playa)"></a>
 
   <div class="bunker-contenido">
