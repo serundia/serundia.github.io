@@ -1,4 +1,3 @@
-
 <style>
   /* LA NOCHE LUMINOSA */
   html, body {
@@ -60,10 +59,12 @@
     text-shadow: 0 0 1px rgba(255, 204, 0, 0.3) !important;
   }
 
-  /* TEXTO ENTRE CORCHETES IDÉNTICO A "ENTRAR" */
+  /* CONTENEDOR AJUSTADO PARA PONER LAS DOS OPCIONES EN LÍNEA */
   .recuerdo-volver {
     margin-top: 140px !important;
-    text-align: left !important; /* Alineación limpia con la prosa */
+    text-align: left !important;
+    display: flex !important;
+    gap: 30px !important; /* Separación sutil entre salir y seguir */
   }
 
   .recuerdo-volver a, .recuerdo-volver a:visited {
@@ -115,9 +116,10 @@
     <p>Empecé a llorar seis horas más tarde.</p>
     <p>Justo a las 12.</p>
 
-    <!-- ENLACE TEXTUAL IDÉNTICO AL INICIO DE LA OBRA -->
+    <!-- LAS DOS OPCIONES ALINEADAS -->
     <div class="recuerdo-volver">
       <a href="index.html">[ salir ]</a>
+      <a href="primavera.html">[ seguir ]</a>
     </div>
 
   </div>
